@@ -1,5 +1,4 @@
 # ES-TOM
- EXPERT SYSTEM FOR GAME SELECTION AS A CHILDREN'S DEVELOPMENT SUPPORT
  Expert sytem for game selection as a children's development suport, this system build for complete the final project to get a bachelor's degree. 
 
 بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ
