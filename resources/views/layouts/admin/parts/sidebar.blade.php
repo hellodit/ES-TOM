@@ -14,7 +14,6 @@
                     <a href="#" class="nav-link has-dropdown"><i class="fas fa-ellipsis-h"></i> <span>Pengaturan</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{route('dashboard.setting')}}">Pengaturan Akun</a></li>
-                        <li><a class="nav-link" href="utilities-invoice.html">Verifikasi Akun</a></li>
                     </ul>
                 </li>
 
