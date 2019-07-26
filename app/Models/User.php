@@ -7,7 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Traits\Uuids;
 
 class User extends Authenticatable
-{    
+{
     use Uuids;
     public $incrementing = false;
     use Notifiable;
@@ -18,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'first_name','last_name','username','email', 'password',
+        'name','avatar','email', 'password',
     ];
 
     /**
