@@ -16,12 +16,12 @@ class UserSeeder extends Seeder
 
         $this->path = storage_path('app/public/user_photo/');
         $this->dimensions = ['300', '60'];
-        
+
         if (!File::isDirectory($this->path)) {
             File::makeDirectory($this->path, 0777, true);
         }
 
-        
+
         foreach ($this->dimensions as $row) {
             if (!File::isDirectory($this->path.'/'.$row)) {
                 File::makeDirectory($this->path.'/'.$row);
@@ -37,6 +37,7 @@ class UserSeeder extends Seeder
             'email'      => 'asditap@gmail.com',
             'password'   =>  bcrypt('hellodit'),
             'avatar'     => $image60,
+            'type'       => 'admin'
         ]);
     }
 }
