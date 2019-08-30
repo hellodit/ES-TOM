@@ -11,17 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','Auth\loginController@showLoginForm');
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'HomeDashboardController@index')->middleware('auth');
 
 Route::group(['prefix' => 'dashboard','middleware' => 'auth','namespace' => 'Dashboard'], function () {
     Route::get('/', 'HomeDashboardController@index');
-    Route::get('/transaction/data', 'HomeDashboardController@getTransaction');
+    Route::get('games','GameController@index')->name('dashboard.games');
+    Route::post('game','GameController@store');
+    Route::get('game/form/{id?}','GameController@form');
+    Route::get('games/data','GameController@data');
+    Route::get('game/detail/{id}','GameController@show');
+    Route::delete('game/{id}','GameController@destroy');
 
     Route::get('setting', 'SettingProfileController@index')->name('dashboard.setting');
     Route::post('setting', 'SettingProfileController@store')->name('dashboard.setting.store');
