@@ -60,10 +60,8 @@
                             @enderror
                         </div>
                     </div>
-                    <a href="#" class="btn btn-danger float-left" role="button" data-toggle="modal"
-                        data-target=".bs-modal-lg" style="cursor:pointer" onclick="actControl('change-password');">Ubah
-                        Kata
-                        sandi</a>
+                    <a href="#" class="btn btn-danger float-left" role="button" data-toggle="modal" data-target=".bs-modal-lg" style="cursor:pointer" onclick="actControl('change-password');">Ubah
+                        Kata sandi</a>
             </div>
             <div class="card-footer bg-whitesmoke">
                 <button type="submit" class="btn btn-primary">Simpan</button>
