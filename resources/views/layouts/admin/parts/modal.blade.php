@@ -2,14 +2,16 @@
     <div class="modal-dialog modal-lg" id="modal-setup">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myLargeModalLabel">
-                    <div class="text-center m-t-30">
-                        <i class="fas fa-spin ti-reload m-r-10"></i>Proses menampilkan data . . .
-                    </div>
-                </h4>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            </div>
+                <h5 class="modal-title" id="myLargeModalLabel">Proses menampilkan data . . .</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
             <div class="modal-body" id="myLargeModalBody"></div>
+            <div class="modal-footer bg-whitesmoke br">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
         </div>
     </div>
 </div>
