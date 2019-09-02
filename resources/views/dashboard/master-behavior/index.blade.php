@@ -30,9 +30,6 @@
                 $("#data-display").load('{{url("dashboard/behaviors/data")}}');
             } else if (x == "form") {
                 $("#form-display").load('{{url("dashboard/behavior/form")}}' +"/"+ (!y ? "" : y) );
-            } else if( x == "detail"){
-                $("#modal-setup").attr("class", "modal-dialog modal-lg");
-                $("#myLargeModalBody").load('{{url("dashboard/behavior/detail")}}' +"/"+ (!y ? "" : y ));
             }else if (x == "delete") {
                 var csrf_token = $('meta[name="csrf-token"]').attr('content');
                 swal({
