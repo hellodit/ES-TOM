@@ -44,9 +44,8 @@
             }else if (x == "delete") {
                 var csrf_token = $('meta[name="csrf-token"]').attr('content');
                 swal({
-                        title: 'Apakah anda setuju untuk menghapus kategori?',
-                        text: 'ketika telah dihapus kategori tidak dapat dikembalikan lagi, anda dapat menulis ulang kategori yang telah dihapus',
-                        icon: 'warning',
+                        title: 'Apakah anda setuju untuk menghapus data?',
+                        text: 'Data yang telah dihapus tidak dapat dikembalikan lagi',                        icon: 'warning',
                         buttons: true,
                         dangerMode: true,
                     })
