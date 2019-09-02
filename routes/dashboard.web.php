@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Dashboard\BehaviorController;
+
 Route::group(['prefix' => 'dashboard','midlleware' => 'auth','namespace' => 'Dashboard'], function () {
     Route::get('/', 'HomeDashboardController@index');
 
@@ -9,4 +11,11 @@ Route::group(['prefix' => 'dashboard','midlleware' => 'auth','namespace' => 'Das
     Route::get('games/data','GameController@data');
     Route::get('game/detail/{id}','GameController@show');
     Route::delete('game/{id}','GameController@destroy');
+
+    Route::get('behaviors','BehaviorController@index')->name('dashboard.behaviors');
+    Route::post('behavior','BehaviorController@store');
+    Route::get('behavior/form/{id?}','BehaviorController@form');
+    Route::get('behaviors/data','BehaviorController@data');
+    Route::delete('behavior/{id}','BehaviorController@destroy');
+
 });
