@@ -18,4 +18,6 @@ Route::group(['prefix' => 'dashboard','midlleware' => 'auth','namespace' => 'Das
     Route::get('behaviors/data','BehaviorController@data');
     Route::delete('behavior/{id}','BehaviorController@destroy');
 
+    Route::get('users','UserController@index')->name('dashboard.users');
+    Route::get('users/data','UserController@data');
 });
