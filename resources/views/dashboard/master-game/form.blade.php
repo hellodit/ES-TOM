@@ -42,11 +42,11 @@
 
 
             <div class="row m-t-10">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                     <button type="button" onclick="actControl('form')" class="btn btn-block btn-danger"><i
                             class="fa fa-undo m-r-10"></i> Reset</button>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                     <button type="submit" id="submit-game" class="btn btn-block btn-info"><i class="fa fa-save m-r-10"></i>
                         Simpan</button>
                 </div>
