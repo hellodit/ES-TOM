@@ -16,19 +16,6 @@ Route::get('/', 'Dashboard\HomeDashboardController@index');
 Route::group(['prefix' => 'dashboard','middleware' => 'auth','namespace' => 'Dashboard'], function () {
     Route::get('/', 'HomeDashboardController@index');
 
-    Route::get('ages','AgeController@index')->name('dashboard.ages');
-    Route::post('age','AgeController@store');
-    Route::get('age/form/{id?}','AgeController@form');
-    Route::get('ages/data','AgeController@data');
-    Route::delete('age/{id}','AgeController@destroy');
-
-    Route::get('modalities','ModalityController@index')->name('dashboard.modalities');
-    Route::post('modality','ModalityController@store');
-    Route::get('modality/form/{id?}','ModalityController@form');
-    Route::get('modalities/data','ModalityController@data');
-    Route::delete('modality/{id}','ModalityController@destroy');
-
-
     Route::get('setting', 'SettingProfileController@index')->name('dashboard.setting');
     Route::post('setting', 'SettingProfileController@store')->name('dashboard.setting.store');
     Route::view('form-changepassword', 'dashboard.setting-account.changepassword');
