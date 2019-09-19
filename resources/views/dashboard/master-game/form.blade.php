@@ -90,16 +90,16 @@
             error: function (data) {
                 $('.alert-container').html('');
                 if (data.responseJSON.errors) {
+                    var val = '<ul>';
                     $.each(data.responseJSON.errors, function (key, value) {
                         console.log(key);
-                        var val = '<ul>';
                         value.forEach(function (element) {
                             val += '<li>' + element + '</li>';
                         });
-                        val += '</ul>';
-                        $('.alert-container').append('<div class="alert alert-danger">' +
-                            val + '</div>');
                     })
+                    val += '</ul>';
+                    $('.alert-container').append('<div class="alert alert-danger">' +
+                val + '</div>');
                 } else if (data.responseJSON.msg) {
                     $('.alert-container').append('<div class="alert alert-danger">- ' + data
                         .responseJSON.msg + '</div>');
