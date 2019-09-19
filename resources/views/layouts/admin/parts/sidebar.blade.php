@@ -20,6 +20,7 @@
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-ellipsis-h"></i> <span>Master Data</span></a>
                 <ul class="dropdown-menu">
                     <li><a href="{{route('dashboard.games')}}">Master Permainan</a></li>
+                    <li><a href="{{route('dashboard.parameters')}}">Master Parameter</a></li>
                     <li><a href="{{route('dashboard.behaviors')}}">Master Perilaku Anak</a></li>
                     <li><a href="#">Master Aturan</a></li>
                 </ul>
