@@ -22,7 +22,7 @@ class GameController extends Controller
         $data['act'] = (empty($id) ? "Tambah Data" : "Edit Data");
         $data['url'] = (empty($id) ? url('dashboard/game') : url('dashborad/game/'.$id));
         $data['action'] = (empty($id) ? "POST" : "PUT");
-        $data['categories'] = Category::all();
+        $data['categories'] = ['Alqolam','ETL Learning','Cordoba Kids'];
         return view('dashboard.master-game.form',['data' => $data]);
     }
 
@@ -97,16 +97,15 @@ class GameController extends Controller
                 'code'          => $request->code,
                 'name'          => $request->name,
                 'description'   => $request->description,
-                'category_id'   => $request->category,
+                'category'      => $request->category,
                 'image'         => $imageName
             ]);
-
         }else{
             Game::create([
                 'code'          => $request->code,
                 'name'          => $request->name,
                 'description'   => $request->description,
-                'category_id'   => $request->category
+                'category'   => $request->category
             ]);
         }
 

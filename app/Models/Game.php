@@ -6,9 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Game extends Model
 {
-    protected $fillable = ['code','name','description','category_id','image'];
+    protected $fillable = ['code','name','category','description','image'];
 
-    public function category() {
-        return $this->belongsTo('App\Models\Category');
-    }
 }
