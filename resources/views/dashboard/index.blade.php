@@ -15,10 +15,10 @@
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
-                                <h4>Dana Terkumpul</h4>
+                                <h4>Jumlah Penguna</h4>
                             </div>
                             <div class="card-body">
-                               11
+                               {{$data['users']}}
                             </div>
                         </div>
                     </div>
@@ -30,10 +30,10 @@
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
-                                <h4>Donasi Disalurkan</h4>
+                                <h4>Jumlah Permainan</h4>
                             </div>
                             <div class="card-body">
-                                11
+                                {{$data['games']}}
                             </div>
                         </div>
                     </div>
@@ -45,10 +45,10 @@
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
-                                <h4>Campaign Dimulai</h4>
+                                <h4>Jumlah Parameter</h4>
                             </div>
                             <div class="card-body">
-                               11
+                                {{$data['params']}}
                             </div>
                         </div>
                     </div>
@@ -60,10 +60,10 @@
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
-                                <h4>Campaign Dibatalkan</h4>
+                                <h4>Jumlah Hubungan Parameter dan Game</h4>
                             </div>
                             <div class="card-body">
-                                11
+                                {{$data['gameparam']}}
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                 <div class="col-lg-9 col-md-12 col-12 col-sm-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Transaksi terakhir</h4>
+                            <h4>Riwayat Konsultasi</h4>
                         </div>
                         <div class="card-body">
                             <div id="transactiondata">
