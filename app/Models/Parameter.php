@@ -13,4 +13,12 @@ class Parameter extends Model
         return $this->belongsTo('App\Models\Variable','variable_id');
     }
 
+    public function games(){
+        return $this->belongsToMany("App\Models\Game");
+    }
+
+    public function getCodeName(){
+        return $this->code.' - '.$this->name;
+    }
+
 }

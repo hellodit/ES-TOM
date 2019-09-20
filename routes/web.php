@@ -34,6 +34,13 @@ Route::group(['prefix' => 'dashboard','middleware' => 'auth','namespace' => 'Das
     Route::get('parameters/data','ParametersController@data');
     Route::get('parameter/detail/{id}','ParametersController@show');
     Route::delete('parameter/{id}','ParametersController@destroy');
+    Route::get('getparam','ParametersController@getParameters');
+
+
+    Route::get('gameparams','GameParameterController@index')->name('dashboard.gameparam');
+    Route::get('gameparam/form/{id?}','GameParameterController@form');
+    Route::post('gameparams','GameParameterController@store')->name('save.gameparam');
+    Route::delete('gameparam/{id}','GameParameterController@destroy')->name('destroy.gameparam');
 
     Route::get('behaviors','BehaviorController@index')->name('dashboard.behaviors');
     Route::post('behavior','BehaviorController@store');
