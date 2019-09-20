@@ -88,7 +88,7 @@ class ParametersController extends Controller
     }
 
     public function show($id){
-        $data = parameters::findOrfail($id);
+        $data = Parameter::findOrfail($id);
 
         return view('dashboard.master-parameters.detail',compact('data'));
     }
