@@ -1,5 +1,8 @@
 @extends('layouts.admin.dashboard')
 @section('title','Master Perilaku Anak')
+@section('customcss')
+<link rel="stylesheet" href="{{asset('stisla/assets/modules/select2/dist/css/select2.min.css')}}">
+@endsection
 @section('main-content')
 <div class="section">
     <div class="section-header">
@@ -50,8 +53,10 @@
     </div>
 </div>
 @endsection
+
 @section('customjs')
-    <script src="{{asset('stisla/assets/modules/select2/dist/js/select2.min.js')}}"></script>
+    <script src="{{asset('stisla/assets/modules/select2/dist/js/select2.full.min.js')}}"></script>
+
     <script type="text/javascript">
     $(document).ready(function() {
         $('.select2-multi').select2();
@@ -60,7 +65,5 @@
 
 @endsection
 
-@section('customcss')
-    <link rel="stylesheet" href="{{asset('stisla/assets/modules/select2/dist/css/select2.css')}}">
-@endsection
+
 
