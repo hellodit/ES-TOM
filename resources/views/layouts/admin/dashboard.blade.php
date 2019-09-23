@@ -7,10 +7,11 @@
     <title> @yield('title') - Tugas Akhir </title>
     <link rel="stylesheet" href="{{asset('stisla/assets/modules/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    @yield('customcss')
+
     <link rel="stylesheet" href="{{asset('stisla/assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('stisla/assets/css/components.css')}}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    @yield('customcss')
 </head>
 
 <body>
