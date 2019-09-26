@@ -13,11 +13,11 @@
                             <h4 class="title">PIlih salah satu kriteria yang sesuai dengan anak anda</h4>
                     </div>
                     <div class="card-body">
-                        <form action="" method="post">
+                        <form action="{{route('dashboard.consul.proses')}}" method="post">
                                 <p>
                                         Sorry we can't find any data, to get rid of this message, make at least 1 entry.
                                     </p>
-                            <div class="form-check">
+                            {{-- <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
                                     value="option1" checked>
                                 <label class="form-check-label" for="exampleRadios1">
@@ -37,7 +37,19 @@
                                 <label class="form-check-label" for="exampleRadios3">
                                     Disabled radio
                                 </label>
-                            </div>
+                            </div> --}}
+                        <input type="hidden" name="step" value="{{$nextStep}}">
+                            @csrf
+                            @foreach ($params as $param)
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="id" id="exampleRadios2"
+                                        value="{{$param->id}}">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        {{$param->name}}
+                                    </label>
+                                </div>
+                            @endforeach
+
                             <div class="form-group pt-3">
                                     <input type="submit" value="Kirim" class="btn btn-primary">
                             </div>
