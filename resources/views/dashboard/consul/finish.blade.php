@@ -17,19 +17,16 @@
                             <table class="table table-striped table-md">
                                 <tr>
                                     <td>Nama</td>
-                                    <td>Bambang</td>
+                                    <td>{{Auth::user()->name}}</td>
                                 </tr>
                                 <tr>
                                     <td>Tanggal Konsultasi</td>
-                                    <td>24 Maret 2019</td>
+                                    <td>{{date("Y-m-d")}}
+                                </td>
                                 </tr>
                                 <tr>
                                     <td>Alamat Email</td>
-                                    <td>bambang@bam.com</td>
-                                </tr>
-                                <tr>
-                                    <td>Nama Anak</td>
-                                    <td>Suketi Mujiono</td>
+                                    <td>{{Auth::user()->email}}</td>
                                 </tr>
                             </table>
                         </div>
@@ -39,10 +36,21 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Pengisian Konsultasi</h4>
+                        <h4>Hasil Permainan</h4>
                     </div>
                     <div class="card-body">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, </p>
+                        @foreach ($game as $itemga)
+                            <h3>{{$itemga->name}}</h3>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="{{asset("uploads/images/".$itemga->image)}}" class="img-thumbnail" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                        {!!$itemga->description!!}
+                                        <p class="mb-2"><span class="badge badge-primary">Kode Permainan : {{$itemga->code}}</span> <span class="badge badge-primary">Kategori : {{$itemga->category}}</span> </p>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -56,38 +64,14 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-striped table-md">
-                                    <tr>
-                                        <td>Nama</td>
-                                        <td>Bambang</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tanggal Konsultasi</td>
-                                        <td>24 Maret 2019</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Alamat Email</td>
-                                        <td>bambang@bam.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nama Anak</td>
-                                        <td>Suketi Mujiono</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nama Anak</td>
-                                        <td>Suketi Mujiono</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nama Anak</td>
-                                        <td>Suketi Mujiono</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nama Anak</td>
-                                        <td>Suketi Mujiono</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nama Anak</td>
-                                        <td>Suketi Mujiono</td>
-                                    </tr>
+                                    @foreach ($params as $key => $item)
+                                        <tr>
+                                            <td>{{$key}}</td>
+                                            @foreach ($item as $itemm)
+                                                <td>{{$itemm->name}}</td>
+                                            @endforeach
+                                        </tr>
+                                    @endforeach
                                 </table>
                             </div>
                         </div>

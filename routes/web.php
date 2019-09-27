@@ -42,8 +42,9 @@ Route::group(['prefix' => 'dashboard','middleware' => 'auth','namespace' => 'Das
     Route::post('gameparams','GameParameterController@store')->name('save.gameparam');
     Route::delete('gameparam/{id}','GameParameterController@destroy')->name('destroy.gameparam');
 
-    Route::view('consul', 'dashboard.consul.index');
-    Route::view('consul/finish', 'dashboard.consul.finish');
+    Route::get('consul', 'ConsultationController@index')->name('dashboard.consul');
+    Route::post('consul/proses', 'ConsultationController@proses')->name('dashboard.consul.proses');
+    Route::get('consul/finish', 'ConsultationController@finish')->name('dashboard.consul.finish');
 
 
     Route::get('behaviors','BehaviorController@index')->name('dashboard.behaviors');

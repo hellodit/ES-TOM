@@ -8,53 +8,32 @@
     <div class="section-body">
         <div class="row">
             <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header">
+                <div class="card card-primary">
+                    <form action="{{route('dashboard.consul.proses')}}" method="post">
+
+                        <div class="card-header card-primary">
                             <h4 class="title">PIlih salah satu kriteria yang sesuai dengan anak anda</h4>
-                    </div>
-                    <div class="card-body">
-                        <form action="{{route('dashboard.consul.proses')}}" method="post">
-                                <p>
-                                        Sorry we can't find any data, to get rid of this message, make at least 1 entry.
-                                    </p>
-                            {{-- <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Default radio
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                                    value="option2">
-                                <label class="form-check-label" for="exampleRadios2">
-                                    Second default radio
-                                </label>
-                            </div>
-                            <div class="form-check disabled">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
-                                    value="option3" disabled>
-                                <label class="form-check-label" for="exampleRadios3">
-                                    Disabled radio
-                                </label>
-                            </div> --}}
-                        <input type="hidden" name="step" value="{{$nextStep}}">
+                        </div>
+                        <div class="card-body">
+                            <input type="hidden" name="step" value="{{empty($nextStep) ? '1' : $nextStep }}">
                             @csrf
                             @foreach ($params as $param)
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="id" id="exampleRadios2"
-                                        value="{{$param->id}}">
-                                    <label class="form-check-label" for="exampleRadios2">
-                                        {{$param->name}}
-                                    </label>
-                                </div>
-                            @endforeach
-
-                            <div class="form-group pt-3">
-                                    <input type="submit" value="Kirim" class="btn btn-primary">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="id" id="exampleRadios2"
+                                    value="{{$param->id}}">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    {{' [ '.$param->code.' ] '.$param->name}}
+                                </label>
                             </div>
-                        </form>
-                    </div>
+                            @endforeach
+                        </div>
+                        <div class="card-footer bg-whitesmoke">
+                            <div class="form-group">
+                                <input type="submit" value="Lanjutkan" class="btn btn-primary">
+                            </div>
+                        </div>
+                    </form>
+
                 </div>
             </div>
         </div>
