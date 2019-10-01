@@ -8,13 +8,14 @@
     <div class="section-body">
         <div class="row">
             <div class="col-md-12">
+                @include('layouts.admin.flash')
                 <div class="card card-primary">
                     <form action="{{route('dashboard.consul.proses')}}" method="post">
-
                         <div class="card-header card-primary">
                             <h4 class="title">PIlih salah satu kriteria yang sesuai dengan anak anda</h4>
                         </div>
                         <div class="card-body">
+                            <p>Berdasarkan Kriteria yang telah dipilih sebelumnya  <b>{{empty($prevParam) ? 'kosong' : $prevParam->name }}</b>, maka pilih salah satu kemungkinan dibawah ini!</p>
                             <input type="hidden" name="step" value="{{empty($nextStep) ? '1' : $nextStep }}">
                             @csrf
                             @foreach ($params as $param)
@@ -29,7 +30,9 @@
                         </div>
                         <div class="card-footer bg-whitesmoke">
                             <div class="form-group">
+                                <a href="{{ url()->previous() }}" class="btn btn-danger">Kembali</a>
                                 <input type="submit" value="Lanjutkan" class="btn btn-primary">
+
                             </div>
                         </div>
                     </form>
@@ -48,5 +51,7 @@
 @endsection
 
 @section('customjs')
+<style>
 
+</style>
 @endsection
