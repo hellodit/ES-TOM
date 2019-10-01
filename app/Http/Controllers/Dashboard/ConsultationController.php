@@ -14,13 +14,10 @@ class ConsultationController extends Controller
 {
 
     public function index(Request $request){
-
         $sesi = session()->get('results');
         if( $request->input('step') == 1 || !$request->input('step') ) {
             $params = Parameter::where('variable_id','=',!$request->input('step') ? 1 : $request->input('step'))->get();
         } else if($request->input('step') == 9) {
-            // dd(Auth::user()->id);
-
             $history = new History;
             $history->user_id = Auth::user()->id;
             $history->game_id = array_shift($sesi[8]['posibilities']);
@@ -35,10 +32,17 @@ class ConsultationController extends Controller
             })->get();
         }
         $nextStep = $request->input('step');
-        return view('dashboard.consul.index',compact('params', 'nextStep'));
+        $prevParam = Parameter::where('id',$request->input('prevparam'))->first();
+
+        return view('dashboard.consul.index',compact('params', 'nextStep','prevParam'));
     }
 
     public function proses(Request $request){
+
+        $request->validate([
+            'id' => 'required'
+        ]);
+
         $posibilities = Parameter::where('id','=',$request->id)->first()->games()->get()->pluck('id');
         if($request->step == 1) {
             session()->forget('results');
@@ -55,7 +59,7 @@ class ConsultationController extends Controller
         $calculate[$request->step][ 'param_id' ] = $request->id;
         $calculate[$request->step][ 'posibilities' ] = $posibilities;
         $sesi = session()->put('results', $calculate);
-        return redirect()->route('dashboard.consul',['step'=> $request->step+1]);
+        return redirect()->route('dashboard.consul',['step'=> $request->step+1,'prevparam'=> $request->id ]);
     }
 
     public function finish(Request $request){
