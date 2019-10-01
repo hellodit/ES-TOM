@@ -36,8 +36,7 @@ class ParametersController extends Controller
     public function store(Request $request){
         $rules = [
             'code'           => 'required|string|max:50|unique:parameters,code',
-            'name'           => 'required|string|max:200',
-            'description'    => 'string',
+            'name'           => 'required|string',
             'variable'       => 'required'
         ];
 
@@ -50,7 +49,6 @@ class ParametersController extends Controller
         $customAttributes = [
             'code'  => 'kode parameter',
             'name ' => 'nama parameter',
-            'description' => 'deskripsi parameter',
             'variable'  => 'Ketegori parameter'
         ];
 
@@ -67,7 +65,6 @@ class ParametersController extends Controller
         Parameter::create([
             'code'          => $request->code,
             'name'          => $request->name,
-            'description'   => $request->description,
             'variable_id'      => $request->variable,
         ]);
 

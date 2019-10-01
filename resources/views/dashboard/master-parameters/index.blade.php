@@ -1,5 +1,5 @@
 @extends('layouts.admin.dashboard')
-@section('title','Master Ingredient')
+@section('title','Master Parameter')
 @section('main-content')
     <div class="section">
         <div class="section-header">
@@ -8,10 +8,10 @@
     </div>
 
     <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-4">
             <div id="form-display"></div>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-8">
             <div class="alert-container"></div>
             <div id="data-display"></div>
         </div>
@@ -56,7 +56,7 @@
                                 type : "POST",
                                 data : {'_method' : 'DELETE', '_token' : csrf_token},
                                 success:function(data){
-                                    swal('kategori berhasil dihapus', {
+                                    swal('berhasil dihapus', {
                                         icon: 'success',
                                     });
                                     actControl("data");

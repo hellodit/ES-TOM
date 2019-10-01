@@ -16,10 +16,9 @@ class CreateParametersTable extends Migration
         Schema::create('parameters', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->char('code')->unique();
-            $table->char('name');
+            $table->text('name');
             $table->unsignedBigInteger('variable_id');
             $table->foreign('variable_id')->references('id')->on('variables');
-            $table->text('description');
             $table->timestamps();
         });
     }

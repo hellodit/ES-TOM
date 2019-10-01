@@ -12,24 +12,21 @@
             </div>
 
             <div class="form-group">
-                <label for="labelName">Nama Parameter</label>
-                <input type="text" class="form-control" name="name" placeholder="Nama parameter"  value="{{!empty($data['parameter']) ? $data['parameter']->name : null }}">
-            </div>
-
-            <div class="form-group">
-                <label>Kategori Parameter</label>
+                <label>Variabel Parameter</label>
                 <select class="form-control" name="variable">
-                    <option value="" selected desabled> Pilih Kategori Parameter</option>
+                    <option value="" selected desabled> Pilih Variabel Parameter</option>
                     @foreach ($data['variables'] as $variable)
                         <option value="{{$variable->id}}" {{ !empty($data['parameter']) ? $data['parameter']->variable_id == $variable->id ? 'selected' : null : null }}>{{$variable->name}}</option>
                     @endforeach
                 </select>
             </div>
 
+
+
             <div class="form-group">
-                <label>Deskripsi</label>
-                <textarea name="description" class="form-control" id="parameter_description" cols="30" rows="10">{{!empty($data['parameter']) ? $data['parameter']->description : null }}</textarea>
-            </div>
+                    <label>Nama Parameter</label>
+                    <textarea name="name" class="form-control" id="parameter_description" cols="30">{{!empty($data['parameter']) ? $data['parameter']->name : null }}</textarea>
+                </div>
 
 
             <div class="row m-t-10">
