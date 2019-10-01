@@ -28,7 +28,7 @@ class ParametersController extends Controller
 
     public function data(Request $request){
         if($request->ajax()){
-            $parameters = Parameter::latest()->with('variable')->paginate(5);
+            $parameters = Parameter::latest()->with('variable')->paginate(10);
             return view('dashboard.master-parameters.data',compact('parameters'))->render();
         }
     }
