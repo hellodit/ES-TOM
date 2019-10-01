@@ -12,14 +12,14 @@ class GamesTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('games')->delete();
-        
+
         \DB::table('games')->insert(array (
-            0 => 
+            0 =>
             array (
-                'id' => 2,
+                'id' => 1,
                 'code' => 'P01',
                 'name' => 'Hafiz dan Hafizah',
                 'image' => '5d82c55ba8651_in_20190919.jpg',
@@ -28,9 +28,9 @@ class GamesTableSeeder extends Seeder
                 'created_at' => '2019-09-19 00:01:31',
                 'updated_at' => '2019-09-19 00:01:31',
             ),
-            1 => 
+            1 =>
             array (
-                'id' => 3,
+                'id' => 2,
                 'code' => 'P02',
                 'name' => 'Smart Hafiz',
                 'image' => '5d82c5a2da104_in_20190919.jpg',
@@ -39,9 +39,9 @@ class GamesTableSeeder extends Seeder
                 'created_at' => '2019-09-19 00:02:43',
                 'updated_at' => '2019-09-19 00:02:43',
             ),
-            2 => 
+            2 =>
             array (
-                'id' => 4,
+                'id' => 3,
                 'code' => 'P03',
                 'name' => 'Smart Sajadah',
                 'image' => '5d82c6139e522_in_20190919.png',
@@ -50,9 +50,9 @@ class GamesTableSeeder extends Seeder
                 'created_at' => '2019-09-19 00:04:35',
                 'updated_at' => '2019-09-19 00:04:35',
             ),
-            3 => 
+            3 =>
             array (
-                'id' => 5,
+                'id' => 4,
                 'code' => 'P04',
                 'name' => 'Mushaf For Kids',
                 'image' => '5d82c68cb4acd_in_20190919.jpg',
@@ -61,9 +61,9 @@ class GamesTableSeeder extends Seeder
                 'created_at' => '2019-09-19 00:06:36',
                 'updated_at' => '2019-09-19 00:06:36',
             ),
-            4 => 
+            4 =>
             array (
-                'id' => 6,
+                'id' => 5,
                 'code' => 'P05',
                 'name' => 'Super Cute cam',
                 'image' => '5d82c71626232_in_20190919.png',
@@ -72,9 +72,9 @@ class GamesTableSeeder extends Seeder
                 'created_at' => '2019-09-19 00:08:54',
                 'updated_at' => '2019-09-19 00:08:54',
             ),
-            5 => 
+            5 =>
             array (
-                'id' => 7,
+                'id' => 6,
                 'code' => 'P06',
                 'name' => 'Widya Wiyata Pertama',
                 'image' => '5d82c796a0075_in_20190919.png',
@@ -83,21 +83,10 @@ class GamesTableSeeder extends Seeder
                 'created_at' => '2019-09-19 00:11:04',
                 'updated_at' => '2019-09-19 00:11:04',
             ),
-            6 => 
+            6 =>
             array (
-                'id' => 8,
+                'id' => 7,
                 'code' => 'P07',
-                'name' => 'Cakrawala Pengetahuan Dasar',
-                'image' => '5d82c80eba711_in_20190919.PNG',
-                'category' => 'ETL Learning',
-                'description' => '<p>Buku 3D yang mengajarkan 49 keterampilan melalui cerita yang interaktif, dapat memberikan pengetahuan untuk meningkatkan kemampuan berosialisasi dan mengedalikan emosi. Memberikan pengetahuan ke anak mengenai nilai – nilai yang berlaku dengan metode penerapan pada keseharian, integritas, kejujuran, saling menghormati, toleransi dan empati. Pembelajaran melalui media Audio dan boneka jari<br></p>',
-                'created_at' => '2019-09-19 00:13:03',
-                'updated_at' => '2019-09-19 00:13:03',
-            ),
-            7 => 
-            array (
-                'id' => 9,
-                'code' => 'P08',
                 'name' => 'Learning Math with albert',
                 'image' => '5d82c88882a1e_in_20190919.jpg',
                 'category' => 'ETL Learning',
@@ -105,10 +94,10 @@ class GamesTableSeeder extends Seeder
                 'created_at' => '2019-09-19 00:15:04',
                 'updated_at' => '2019-09-19 00:15:04',
             ),
-            8 => 
+            7 =>
             array (
-                'id' => 10,
-                'code' => 'P09',
+                'id' => 8,
+                'code' => 'P08',
                 'name' => 'Little Abid',
                 'image' => '5d82c8d36feda_in_20190919.jpg',
                 'category' => 'Cordoba Kids',
@@ -117,7 +106,7 @@ class GamesTableSeeder extends Seeder
                 'updated_at' => '2019-09-19 00:16:19',
             ),
         ));
-        
-        
+
+
     }
 }
