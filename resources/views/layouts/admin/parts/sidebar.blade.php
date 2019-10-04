@@ -24,6 +24,7 @@
                     <li><a href="{{route('dashboard.games')}}">Master Permainan</a></li>
                     <li><a href="{{route('dashboard.parameters')}}">Master Parameter</a></li>
                     <li><a href="{{route('dashboard.gameparam')}}">Basis Pengetahuan</a></li>
+                    <li><a href="{{route('dashboard.rules')}}">Master Aturan</a></li>
                 </ul>
             </li>
 
