@@ -15,4 +15,14 @@ class Game extends Model
     public function getCodeName(){
         return $this->code.' - '.$this->name;
     }
+
+    public function rule()
+    {
+        return $this->hasMany('App\Models\Rule');
+    }
+
+    public function GameParameter()
+    {
+        return $this->belongsTo('App\Models\GameParameter');
+    }
 }

@@ -19,6 +19,8 @@ class CreateGameParameterTable extends Migration
             $table->foreign('parameter_id')->references('id')->on('parameters');
             $table->unsignedBigInteger('game_id');
             $table->foreign('game_id')->references('id')->on('games');
+            $table->unsignedBigInteger('rule_id')->nullable();
+            $table->foreign('rule_id')->references('id')->on('rules');
             $table->timestamps();
         });
     }

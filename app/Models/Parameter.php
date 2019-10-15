@@ -18,7 +18,12 @@ class Parameter extends Model
     }
 
     public function getCodeName(){
-        return $this->code.' - '.$this->name;
+        return $this->code.' - '.strip_tags($this->name);
+    }
+
+    public function GameParameter()
+    {
+        return $this->belongsTo('App\Models\GameParameter');
     }
 
 }

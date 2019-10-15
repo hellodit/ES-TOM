@@ -12,4 +12,9 @@ class Rule extends Model
     {
         return $this->hasMany('App\Models\GameParameter');
     }
+
+    // public function gameparams()
+    // {
+    //     return $this->hasManyThrough('App\Models\GameParameter', 'App\Models\Parameter');
+    // }
 }

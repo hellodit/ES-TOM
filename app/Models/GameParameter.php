@@ -8,13 +8,18 @@ class GameParameter extends Model
 {
     protected $table = "game_parameter";
 
+    public function rule()
+    {
+        return $this->belongsTo('App\Models\Rule');
+    }
+
     public function parameter()
     {
-        return $this->belongsTo('App\Models\Parameter');
+        return $this->hasMany('App\Models\Parameter', 'id', 'parameter_id');
     }
 
     public function game()
     {
-        return $this->belongsTo('App\Models\Game');
+        return $this->hasMany('App\Models\Game','id','game_id');
     }
 }

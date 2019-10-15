@@ -45,6 +45,7 @@ Route::group(['prefix' => 'dashboard','middleware' => 'auth','namespace' => 'Das
     Route::get('rules','RulesController@index')->name('dashboard.rules');
     Route::get('rule/form/{id?}','RulesController@form');
     Route::post('rule','RulesController@store')->name('save.rule');
+    Route::get('rule/{id}','RulesController@show');
     Route::delete('rule/{id}','RulesController@destroy')->name('destroy.rule');
 
     Route::get('consul', 'ConsultationController@index')->name('dashboard.consul');

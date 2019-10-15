@@ -15,10 +15,7 @@ class CreateRulesTable extends Migration
     {
         Schema::create('rules', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('parameter_id');
-            $table->foreign('parameter_id')->references('id')->on('parameters');
-            $table->unsignedBigInteger('game_id');
-            $table->foreign('game_id')->references('id')->on('games');
+            $table->string('name');
             $table->timestamps();
         });
     }

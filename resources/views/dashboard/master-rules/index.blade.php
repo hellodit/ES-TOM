@@ -12,15 +12,14 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                    <a href="{{url('dashboard/rule/form')}}"  class="btn btn-primary ">Tambah Basis Pengatahuan</a>
+                    <a href="{{url('dashboard/rule/form')}}"  class="btn btn-primary ">Tambah Aturan</a>
                     <hr>
                 <table class="table table-hover">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Nama Aturan</th>
+                            <th scope="col">Aturan</th>
                             <th scope="col">Permainan</th>
-                            <th scope="col">Parameter</th>
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
@@ -30,10 +29,13 @@
                         <tr>
                             <td data-label="No">{{ ($rules->currentpage()-1) * $rules->perpage() + $nom + 1 }}</td>
                             <td data-label="kode">{{$rule->name}}</td>
-                            <td data-label="kode">{{$rule->games}}</td>
-                            <td data-label="Action">
+                            <td data-label="kode">{{$rule->gameparams[0]->game[0]->name}}</td>
+                            <td data-label="Action" style="min-width:120px">
+                                <a href="#" class="btn btn-info btn-sm" onclick="actControl('detail','{{$rule->id}}')" role="button" data-toggle="modal" data-target=".bs-modal-lg"
+                                            style="cursor:pointer"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="btn btn-primary btn-sm" onclick="actControl('delete','{{$rule->id}}')"><i class="fas fa-edit"></i></a>
                                 <a href="#" class="btn btn-danger btn-sm" onclick="actControl('delete','{{$rule->id}}')"><i class="fas fa-trash"></i></a>
-                                </td>
+                            </td>
                         </tr>
                         @endforeach
                         @else
@@ -62,6 +64,9 @@
             $("#data-display").load('{{url("dashboard/rules/data")}}');
         } else if (x == "form") {
             $("#form-display").load('{{url("dashboard/rule/form")}}' + "/" + (!y ? "" : y));
+        } else if( x == "detail"){
+            $("#modal-setup").attr("class", "modal-dialog modal-lg");
+            $("#myLargeModalBody").load('{{url("dashboard/rule")}}' +"/"+ (!y ? "" : y ));
         } else if (x == "delete") {
             var csrf_token = $('meta[name="csrf-token"]').attr('content');
             swal({
@@ -81,7 +86,7 @@
                                 '_token': csrf_token
                             },
                             success: function (data) {
-
+                                location.reload();
                             }
                         });
                     }

@@ -13,8 +13,14 @@ use App\Models\Rule;
 class RulesController extends Controller
 {
     public function index(Request $request){
-        $rules = Rule::latest()->paginate(10);
-        return view('dashboard.master-rules.index',compact('rules'));
+        $rules = Rule::latest()->with('gameparams.parameter','gameparams.game')->paginate(10);
+        $modal = true;
+        return view('dashboard.master-rules.index',compact('rules','modal'));
+    }
+
+    public function show($id){
+        $data = Rule::with('gameparams.parameter','gameparams.game')->findOrfail($id);
+        return view('dashboard.master-rules.detail',compact('data'));
     }
 
     public function form($id = null){
@@ -53,8 +59,9 @@ class RulesController extends Controller
 
 
     public function destroy($id){
-        $parameters = GameParameter::findOrfail($id);
-        $parameters->delete();
+        $rule = Rule::findOrfail($id);
+        GameParameter::where('rule_id',$rule->id)->delete();
+        $rule->delete();
 
         return redirect()->route('dashboard.gameparam')
         ->with('success','User deleted successfully');
