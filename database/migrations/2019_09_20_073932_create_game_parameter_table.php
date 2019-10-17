@@ -13,12 +13,10 @@ class CreateGameParameterTable extends Migration
      */
     public function up()
     {
-        Schema::create('game_parameter', function (Blueprint $table) {
+        Schema::create('parameter_rule', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('parameter_id');
             $table->foreign('parameter_id')->references('id')->on('parameters');
-            $table->unsignedBigInteger('game_id');
-            $table->foreign('game_id')->references('id')->on('games');
             $table->unsignedBigInteger('rule_id')->nullable();
             $table->foreign('rule_id')->references('id')->on('rules');
             $table->timestamps();
