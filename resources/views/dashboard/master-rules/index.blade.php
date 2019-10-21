@@ -29,11 +29,11 @@
                         <tr>
                             <td data-label="No">{{ ($rules->currentpage()-1) * $rules->perpage() + $nom + 1 }}</td>
                             <td data-label="kode">{{$rule->name}}</td>
-                            <td data-label="kode">{{$rule->gameparams[0]->game[0]->name}}</td>
+                            <td data-label="kode">{{$rule->game->name}}</td>
                             <td data-label="Action" style="min-width:120px">
                                 <a href="#" class="btn btn-info btn-sm" onclick="actControl('detail','{{$rule->id}}')" role="button" data-toggle="modal" data-target=".bs-modal-lg"
                                             style="cursor:pointer"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="btn btn-primary btn-sm" onclick="actControl('delete','{{$rule->id}}')"><i class="fas fa-edit"></i></a>
+                                <a href="{{route('rules.form',$rule->id)}}" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
                                 <a href="#" class="btn btn-danger btn-sm" onclick="actControl('delete','{{$rule->id}}')"><i class="fas fa-trash"></i></a>
                             </td>
                         </tr>
@@ -85,7 +85,7 @@
                                 '_method': 'DELETE',
                                 '_token': csrf_token
                             },
-                            success: function (data) {
+                            success: function () {
                                 location.reload();
                             }
                         });

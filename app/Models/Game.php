@@ -16,13 +16,9 @@ class Game extends Model
         return $this->code.' - '.$this->name;
     }
 
-    public function rule()
+    public function rules()
     {
         return $this->hasMany('App\Models\Rule');
     }
 
-    public function GameParameter()
-    {
-        return $this->belongsTo('App\Models\GameParameter');
-    }
 }

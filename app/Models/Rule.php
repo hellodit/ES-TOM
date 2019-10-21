@@ -6,15 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Rule extends Model
 {
-    protected $fillable = ['name'];
+    protected $fillable = ['name','game_id'];
 
-    public function gameparams()
+    public function params()
     {
-        return $this->hasMany('App\Models\GameParameter');
+        return $this->belongsToMany('App\Models\Parameter')->withPivot('parameter_id');
     }
 
-    // public function gameparams()
-    // {
-    //     return $this->hasManyThrough('App\Models\GameParameter', 'App\Models\Parameter');
-    // }
+    public function game()
+    {
+        return $this->belongsTo('App\Models\Game');
+    }
+
 }

@@ -26,4 +26,9 @@ class Parameter extends Model
         return $this->belongsTo('App\Models\GameParameter');
     }
 
+    public function rules()
+    {
+        return $this->belongsToMany('App\Models\Rule');
+    }
+
 }

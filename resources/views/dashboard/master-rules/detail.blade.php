@@ -5,16 +5,14 @@
     </tr>
     <tr>
         <td>Nama Permainan</td>
-        <td>{{$data->gameparams[0]->game[0]->name}}</td>
+        <td>{{$data->game->name}}</td>
     </tr>
     <tr>
         <td>Aturan Permainan</td>
         <td>
             <ol>
-                @foreach ($data->gameparams as $item)
-                    @foreach ($item->parameter as $parameter)
-                            <li>{{strip_tags($parameter->name)}}</li>
-                    @endforeach
+                @foreach ($data->params as $item)
+                    <li>{{strip_tags($item->name)}}</li>
                 @endforeach
             </ol>
         </td>

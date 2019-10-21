@@ -9,20 +9,19 @@
         <h1>{{$data['act']}}</h1>
     </div>
 </div>
-
+{{-- {{dd($data['rule'])}} --}}
 <div class="row">
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
                 @include('layouts.admin.flash')
-
-                <form action="{{route('save.rule')}}" method="post">
+                <form action="{{$data['url']}}" method="{{$data['action']}}">
                     @csrf
 
                     <div class="form-group row">
                             <label for="colFormLabelLg" class="col-sm-3 col-form-label col-form-label-lg">Nama Aturan</label>
                             <div class="col-sm-9">
-                                <input type="text" name="name" class="form-control" id="">
+                                <input type="text" name="name" class="form-control" id="" value="{{!empty($data['rule']) ? $data['rule']->name  : null }}">
                             </div>
                     </div>
 
@@ -34,7 +33,7 @@
                             <select class="form-control" name="game">
                                 <option value="" selected desabled> Pilih Permainan</option>
                                 @foreach ($data['games'] as $game)
-                                <option value="{{$game->id}}">{{$game->code.' - '.$game->name}}</option>
+                                    <option value="{{$game->id}}" {{!empty($data['rule']->game->id) ? $data['rule']->game->id == $game->id ? 'selected' : null : null  }}>{{$game->code.' - '.$game->name}}</option>
                                 @endforeach
                             </select>
 
@@ -50,7 +49,15 @@
                         <div class="col-sm-9">
                             <select class="form-control select2-multi" name="params[]" multiple="multiple">
                                 @foreach ($data['parameters'] as $parameter)
-                                    <option value="{{$parameter->id}}">{{$parameter->code.' - '.strip_tags($parameter->name)}}</option>
+                                    <option value="{{$parameter->id}}"
+                                        @if (!empty($data['rule']->params))
+                                            @foreach ($data['rule']->params as $selectedparams)
+                                                @if ($selectedparams->id == $parameter->id )
+                                                    {{'selected'}}
+                                                @endif
+                                            @endforeach
+                                        @endif
+                                >{{$parameter->code.' - '.strip_tags($parameter->name)}}</option>
                                 @endforeach
                             </select>
                         </div>
