@@ -60,10 +60,10 @@
                         </div>
                         <div class="card-wrap">
                             <div class="card-header">
-                                <h4>Jumlah Hubungan Parameter dan Game</h4>
+                                <h4>Jumlah Aturan</h4>
                             </div>
                             <div class="card-body">
-                                {{$data['gameparam']}}
+                                {{$data['rule']}}
                             </div>
                         </div>
                     </div>
