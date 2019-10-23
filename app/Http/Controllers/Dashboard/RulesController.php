@@ -8,10 +8,31 @@ use App\Models\Parameter;
 use App\Models\Game;
 use App\Models\Rule;
 use App\Models\ParameterRule;
-
+use App\Imports\RulesImport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class RulesController extends Controller
 {
+    public function importform(){
+        return view('dashboard.master-rules.import');
+    }
+
+    public function import(Request $request){
+        $this->validate($request, [
+            'file' => 'required|mimes:xlsx|max:8024',
+        ]);
+
+        if ($request->hasFile('file')) {
+            $filename = time() . '_' . str_random(50) . '.' . request()->file->getClientOriginalExtension();
+            $path = public_path('uploads');
+            request()->file->move($path.'/',$filename);
+        }
+
+        Excel::import(new RulesImport, public_path('uploads/'.$filename));
+
+        return redirect(route('dashboard.rules'))->with('success','Basis pengetahuan telah ditambahkan');
+    }
+
     public function index(Request $request){
         $rules = Rule::latest()->with('params','game')->paginate(10);
         $modal = true;

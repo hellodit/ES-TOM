@@ -12,7 +12,9 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                    <a href="{{url('dashboard/rule/form')}}"  class="btn btn-primary ">Tambah Aturan</a>
+                    <a href="{{url('dashboard/rule/form')}}"  class="btn btn-primary ">Tambah Aturan</a> |
+                    {{-- <a href="#" class="btn btn-info" onclick="actControl('import')" role="button" data-toggle="modal" data-target=".bs-modal-lg"
+                        style="cursor:pointer">Import Aturan</a> --}}
                     <hr>
                 <table class="table table-hover">
                     <thead>
@@ -91,6 +93,9 @@
                         });
                     }
                 });
+        }else if(x == "import"){
+            $("#modal-setup").attr("class", "modal-dialog modal-lg");
+            $("#myLargeModalBody").load('{{url("dashboard/rule/importform")}}');
         }
     }
 
