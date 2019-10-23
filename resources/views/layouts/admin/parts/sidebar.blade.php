@@ -1,10 +1,10 @@
 <div class="main-sidebar">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="index.html">SALINGBANTU</a>
+            <a href="index.html">TUGASAKHIR</a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">SB</a>
+            <a href="index.html">TA</a>
         </div>
         <ul class="sidebar-menu">
             <li class="menu-header">Halaman</li>
