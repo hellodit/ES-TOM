@@ -42,11 +42,15 @@ Route::group(['prefix' => 'dashboard','middleware' => 'auth','namespace' => 'Das
     Route::post('gameparams','GameParameterController@store')->name('save.gameparam');
     Route::delete('gameparam/{id}','GameParameterController@destroy')->name('destroy.gameparam');
 
+
+    Route::get('rule/importform','RulesController@importform');
+    Route::post('import/rule','RulesController@import')->name('dashboard.rules.import');
+
     Route::get('rules','RulesController@index')->name('dashboard.rules');
     Route::get('rule/form/{id?}','RulesController@form')->name('rules.form');
     Route::post('rule','RulesController@store')->name('save.rule');
     Route::post('rule/edit/{id}','RulesController@edit')->name('edit.rule');
-    Route::get('rule/{id}','RulesController@show');
+    Route::get('rule/{id?}','RulesController@show');
     Route::delete('rule/{id}','RulesController@destroy')->name('destroy.rule');
 
     Route::get('consul', 'ConsultationController@index')->name('dashboard.consul');
@@ -54,11 +58,11 @@ Route::group(['prefix' => 'dashboard','middleware' => 'auth','namespace' => 'Das
     Route::get('consul/finish', 'ConsultationController@finish')->name('dashboard.consul.finish');
 
 
-    Route::get('behaviors','BehaviorController@index')->name('dashboard.behaviors');
-    Route::post('behavior','BehaviorController@store');
-    Route::get('behavior/form/{id?}','BehaviorController@form');
-    Route::get('behaviors/data','BehaviorController@data');
-    Route::delete('behavior/{id}','BehaviorController@destroy');
+    // Route::get('behaviors','BehaviorController@index')->name('dashboard.behaviors');
+    // Route::post('behavior','BehaviorController@store');
+    // Route::get('behavior/form/{id?}','BehaviorController@form');
+    // Route::get('behaviors/data','BehaviorController@data');
+    // Route::delete('behavior/{id}','BehaviorController@destroy');
 
     Route::get('users','UserController@index')->name('dashboard.users');
     Route::get('users/data','UserController@data');
