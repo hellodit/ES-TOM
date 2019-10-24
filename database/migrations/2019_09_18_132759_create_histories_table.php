@@ -13,7 +13,7 @@ class CreateHistoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('histories', function (Blueprint $table) {
+        Schema::create('game_user', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->char('user_id',36);
             $table->foreign('user_id')->references('id')->on('users');
