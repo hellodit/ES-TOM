@@ -12,6 +12,10 @@ class Game extends Model
         return $this->belongsToMany("App\Models\Parameter");
     }
 
+    public function users(){
+        return $this->belongsToMany("App\Models\User");
+    }
+
     public function getCodeName(){
         return $this->code.' - '.$this->name;
     }

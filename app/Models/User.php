@@ -43,4 +43,10 @@ class User extends Authenticatable
     public function fullname(){
         return $this->first_name.' '.$this->last_name;
     }
+
+    public function games()
+    {
+        return $this->belongsToMany('App\Model\Game');
+    }
+
 }
