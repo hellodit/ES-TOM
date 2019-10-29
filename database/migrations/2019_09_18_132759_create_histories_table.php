@@ -15,6 +15,7 @@ class CreateHistoriesTable extends Migration
     {
         Schema::create('game_user', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->char('childname');
             $table->char('user_id',36);
             $table->foreign('user_id')->references('id')->on('users');
             $table->unsignedBigInteger('game_id');
