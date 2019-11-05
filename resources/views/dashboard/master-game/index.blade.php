@@ -1,9 +1,9 @@
 @extends('layouts.admin.dashboard')
-@section('title','Master Ingredient')
+@section('title','Manajemen Permainan')
 @section('main-content')
     <div class="section">
         <div class="section-header">
-            <h1>Master Permainan</h1>
+            <h1>Manajemen Permainan</h1>
         </div>
     </div>
 

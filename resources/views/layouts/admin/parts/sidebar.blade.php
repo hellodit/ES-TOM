@@ -19,12 +19,12 @@
 
             <li class="menu-header">Sistem</li>
             <li class="nav-item dropdown">
-                <a href="#" class="nav-link has-dropdown"><i class="fas fa-ellipsis-h"></i> <span>Master Data</span></a>
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-ellipsis-h"></i> <span>Manajemen Data</span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="{{route('dashboard.games')}}">Master Permainan</a></li>
-                    <li><a href="{{route('dashboard.parameters')}}">Master Parameter</a></li>
+                    <li><a href="{{route('dashboard.games')}}">Manajemen Permainan</a></li>
+                    <li><a href="{{route('dashboard.parameters')}}">Manajemen Parameter</a></li>
                     {{-- <li><a href="{{route('dashboard.gameparam')}}">Basis Pengetahuan</a></li> --}}
-                    <li><a href="{{route('dashboard.rules')}}">Master Aturan</a></li>
+                    <li><a href="{{route('dashboard.rules')}}">Manajemen Aturan</a></li>
                 </ul>
             </li>
 

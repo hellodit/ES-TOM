@@ -19,7 +19,7 @@ class GameController extends Controller
     }
 
     public function form($id = null){
-        $data['act'] = (empty($id) ? "Tambah Data" : "Edit Data");
+        $data['act'] = (empty($id) ? "Tambah Permainan" : "Sunting Permainan");
         $data['url'] = (empty($id) ? url('dashboard/game') : url('dashborad/game/'.$id));
         $data['action'] = (empty($id) ? "POST" : "PUT");
         $data['categories'] = ['Alqolam','ETL Learning','Cordoba Kids'];
@@ -110,7 +110,7 @@ class GameController extends Controller
         }
 
         return response()->json(array(
-            'success' => 'Data ketogori telah berhasil ditambahkan',
+            'success' => 'Data permainan telah berhasil ditambahkan',
             'errors' => false,
         ), 200);
     }

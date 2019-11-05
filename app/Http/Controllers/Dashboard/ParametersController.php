@@ -18,7 +18,7 @@ class ParametersController extends Controller
     }
 
     public function form($id = null){
-        $data['act'] = (empty($id) ? "Tambah Data" : "Edit Data");
+        $data['act'] = (empty($id) ? "Tambah Parameter" : "Sunting Parameter");
         $data['url'] = (empty($id) ? url('dashboard/parameter') : url('dashborad/parameter/'.$id));
         $data['action'] = (empty($id) ? "POST" : "PUT");
         $data['parameter'] = Parameter::find($id);

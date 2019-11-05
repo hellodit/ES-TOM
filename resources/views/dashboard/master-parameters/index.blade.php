@@ -1,9 +1,9 @@
 @extends('layouts.admin.dashboard')
-@section('title','Master Parameter')
+@section('title','Manajemen Parameter')
 @section('main-content')
     <div class="section">
         <div class="section-header">
-            <h1>Master Parameter</h1>
+            <h1>Manajemen Parameter</h1>
         </div>
     </div>
 

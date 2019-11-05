@@ -3,7 +3,7 @@
 @section('main-content')
 <div class="section">
     <div class="section-header">
-            <h1>Master Aturan</h1>
+            <h1>Manajemen Aturan</h1>
     </div>
 </div>
 @include('layouts.flash-msg')

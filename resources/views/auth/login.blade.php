@@ -3,7 +3,7 @@
 @section('content')
 <div class="card card-primary">
     <div class="card-header">
-        <h4>Login</h4>
+        <h4>Masuk Sistem</h4>
     </div>
 
     <div class="card-body">

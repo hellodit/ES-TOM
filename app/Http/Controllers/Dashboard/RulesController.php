@@ -45,7 +45,7 @@ class RulesController extends Controller
     }
 
     public function form($id = null){
-        $data['act'] = (empty($id) ? "Tambah Aturan" : "Edit  Aturan");
+        $data['act'] = (empty($id) ? "Tambah Aturan" : "Sunting  Aturan");
         $data['url'] = (empty($id) ? url('dashboard/rule') : url('dashboard/rule/edit/'.$id));
         $data['action'] = (empty($id) ? "POST" : "POST");
         $data['rule'] = (!empty($id) ? Rule::Where('id',$id)->with('params','game')->first() : null );

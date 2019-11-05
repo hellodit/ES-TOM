@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Login &mdash; Salingbantu</title>
+    <title>Login &mdash; Tugas Akhir</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -40,7 +40,7 @@
                         @endif
                         @yield('content')
                         <div class="simple-footer">
-                            Copyright &copy; {{ env('APP_NAME') }} {{ date('Y') }}
+                            Copyright &copy; {{ env('APP_CODEDBY') }} {{ date('Y') }}
                         </div>
                     </div>
                 </div>
