@@ -42,7 +42,7 @@
                                 <td data-label="kode">{{empty($history->rule->game) ? '-': $history->rule->game->name}}</td>
                                 <td data-label="kode">{!! consts($history->status)!!}</td>
                                 <td data-label="Action" style="min-width:120px">
-                                    <a href="{{route('dashboard.history.detail',$history->id)}}" class="btn btn-dark btn-sm  {{ ($history->status == 'failed') ? 'disabled': null }}"><i class="fas fa-eye"></i></a>
+                                    <a href="{{route('dashboard.history.detail',$history->id)}}" class="btn btn-dark btn-sm  {{ ($history->status == 'failed') ? null : null }}"><i class="fas fa-eye"></i></a>
                                     <a href="#" class="btn btn-danger btn-sm" onclick="actControl('delete','{{$history->id}}')"><i class="fas fa-trash"></i></a>
                                 </td>
                             </tr>

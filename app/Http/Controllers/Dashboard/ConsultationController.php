@@ -92,6 +92,7 @@ class ConsultationController extends Controller
             $history->rule_id = $selectedRule['0']['id'];
             $history->status = 'success';
             $history->save();
+            $history->id;
         }else{
             $history = New History;
             $history->childname = $request->get('childName');
@@ -99,9 +100,9 @@ class ConsultationController extends Controller
             $history->rule_id = null;
             $history->status = 'failed';
             $history->save();
+            $history->id;
         }
-
-        return redirect()->route('dashboard.history')->with(['success' => 'Data hasil konsultasi dan permainan dapat dilihat ditabel yang tersedia']);
+        return redirect()->route('dashboard.history.detail',['id' => $history->id ]);
     }
 
     public function backward(Request $request){

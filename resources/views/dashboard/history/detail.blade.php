@@ -12,7 +12,6 @@
                     <div class="card-header">
                         <h4>Biodata</h4>
                     </div>
-                    {{-- {{dd($history)}} --}}
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped table-md">
@@ -21,8 +20,12 @@
                                     <td>{{$history->user->name}}</td>
                                 </tr>
                                 <tr>
-                                        <td>Nama Anak</td>
-                                        <td>{{$history->childname}}</td>
+                                    <td>Alamat Email</td>
+                                    <td>{{$history->user->email}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Nama Anak</td>
+                                    <td>{{$history->childname}}</td>
                                 </tr>
                                 <tr>
                                     <td>Tanggal Konsultasi</td>
@@ -30,8 +33,8 @@
                                 </td>
                                 </tr>
                                 <tr>
-                                    <td>Alamat Email</td>
-                                    <td>{{$history->user->email}}</td>
+                                    <td>Status</td>
+                                    <td>{!! consts($history->status)!!}</td>
                                 </tr>
                             </table>
                         </div>
@@ -44,6 +47,7 @@
                         <h4>Hasil Permainan</h4>
                     </div>
                     <div class="card-body">
+                            @if (!empty($history->rule))
                                 <h3>{{$history->rule->game->name}}</h3>
                                 <div class="row">
                                     <div class="col-md-3">
@@ -54,11 +58,23 @@
                                             <p class="mb-2"><span class="badge badge-primary">Kode Permainan : {{$history->rule->game->code}}</span> <span class="badge badge-primary">Kategori : {{$history->rule->game->category}}</span> </p>
                                     </div>
                                 </div>
-
+                            @else
+                                <div class="empty-state" data-height="400" style="height: 400px;">
+                                    <div class="empty-state-icon bg-danger">
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                    <h2>Mohon Maaf :(</h2>
+                                    <p class="lead">
+                                        Untuk saat ini tidak ditemukan jenis permainan edukasi yang sesuai dengan kriteria anak anda.
+                                    </p>
+                                    <a href="{{route('dashboard.consul')}}" class="btn btn-warning mt-4">Coba Lagi</a>
+                            </div>
+                            @endif
                     </div>
                 </div>
             </div>
         </div>
+        @if (!empty($history->rule))
         <div class="row">
                 <div class="col-md-12">
                     <div class="card">
@@ -71,22 +87,24 @@
                                 <table class="table table-striped table-md">
                                     <thead>
                                             <tr>
-                                                    <td>Variabel</td>
-                                                    <td>Parameter</td>
-                                                </tr>
+                                                <td>Variabel</td>
+                                                <td>Parameter</td>
+                                            </tr>
                                     </thead>
                                     @foreach ($history->rule->params as $key => $item)
-                                    <tr>
-                                        <td>{{$key+1}}</td>
-                                        <td>{{strip_tags($item->name)}}</td>
-                                    </tr>
-                                    @endforeach
+                                        <tr>
+                                            <td>{{$key+1}}</td>
+                                            <td>{{strip_tags($item->name)}}</td>
+                                        </tr>
+                                        @endforeach
                                 </table>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            @endif
+
     </div>
 </div>
 
