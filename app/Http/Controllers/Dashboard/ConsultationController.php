@@ -7,37 +7,104 @@ use App\Http\Controllers\Controller;
 use App\Models\Parameter;
 use App\Models\Game;
 use App\Models\GameParameter;
+use App\Models\ParameterRule;
+use App\Models\Rule;
 use App\Models\History;
 use Auth;
 
 class ConsultationController extends Controller
 {
+    private $selected = [];
 
-    public function index(Request $request){
-        $sesi = session()->get('results');
-        if( $request->input('step') == 1 || !$request->input('step') ) {
-            $params = Parameter::where('variable_id','=',!$request->input('step') ? 1 : $request->input('step'))->get();
-        } else if($request->input('step') == 9) {
-            $history = new History;
-            $history->user_id = Auth::user()->id;
-            $history->game_id = array_shift($sesi[8]['posibilities']);
-            $history->save();
+    public function index(){
 
-            return redirect()->route('dashboard.consul.finish');
+        $params = [
+            'ages' => Parameter::with('variable')->whereHas('variable', function($q){
+                $q->where('name','=','Usia');
+            })->get(),
+            'edus' => Parameter::with('variable')->whereHas('variable', function($q){
+                $q->where('name','=','Modalitas Belajar');
+            })->get(),
+            'moralities' => Parameter::with('variable')->whereHas('variable', function($q){
+                $q->where('name','=','Nilai Agama dan Moral');
+            })->get(),
+            'physicals' => Parameter::with('variable')->whereHas('variable', function($q){
+                $q->where('name','=','Fisik Motorik');
+            })->get(),
+            'cognitivies' => Parameter::with('variable')->whereHas('variable', function($q){
+                $q->where('name','=','Kognitif');
+            })->get(),
+            'langs' => Parameter::with('variable')->whereHas('variable', function($q){
+                $q->where('name','=','Bahasa');
+            })->get(),
+            'social' => Parameter::with('variable')->whereHas('variable', function($q){
+                $q->where('name','=','Sosial Emosional');
+            })->get(),
+            'games' => Parameter::with('variable')->whereHas('variable', function($q){
+                $q->where('name','=','Kelompok Permainan');
+            })->get(),
+        ];
 
-        } else {
-            $sesi = $sesi[$request->input('step')-1];
-            $params = Parameter::where('variable_id','=',$request->input('step'))->whereHas('games', function( $query ) use ($sesi) {
-                $query->whereIn('games.id', $sesi['posibilities']);
-            })->get();
-        }
-        $nextStep = $request->input('step');
-        $prevParam = Parameter::where('id',$request->input('prevparam'))->first();
-
-        return view('dashboard.consul.index',compact('params', 'nextStep','prevParam'));
+        return view('dashboard.consul.index',compact('params'));
     }
 
     public function proses(Request $request){
+        $request->validate([
+            'childName' => 'required|string',
+            'age' => 'required',
+            'edu' => 'required',
+            'physical' => 'required',
+            'morality' => 'required',
+            'cognitiv' => 'required',
+            'lang' => 'required',
+            'social' => 'required',
+            'game' => 'required',
+        ]);
+
+        foreach ($request->except(['_token','childName']) as $key => $value) {
+            $selected[$key] = Parameter::where('id', $value)->first();
+        }
+
+        $selectedRule = Rule::with('params','game')->get()->filter(function($item) use ($request){
+            // $id = [1,5,9,12,14,18,22,26]; // ATURAN 1
+            //    $id = [2,5,9,12,16,18,23,26]; // ATURAN 5
+            $id = [
+                    $request->get('age'),
+                    $request->get('edu'),
+                    $request->get('physical'),
+                    $request->get('morality'),
+                    $request->get('cognitiv'),
+                    $request->get('lang'),
+                    $request->get('social'),
+                    $request->get('game')
+            ];
+            $paramid = $item->params->pluck('id')->toArray();
+            $nemu = array_intersect($id,$paramid);
+            return count($nemu) == count($id);
+        })->toArray();
+
+        $selectedRule = array_values($selectedRule);
+
+        if(!empty($selectedRule)){
+            $history = New History;
+            $history->childname = $request->get('childName');
+            $history->user_id = Auth::user()->id;
+            $history->rule_id = $selectedRule['0']['id'];
+            $history->status = 'success';
+            $history->save();
+        }else{
+            $history = New History;
+            $history->childname = $request->get('childName');
+            $history->user_id = Auth::user()->id;
+            $history->rule_id = null;
+            $history->status = 'failed';
+            $history->save();
+        }
+
+        return redirect()->route('dashboard.history')->with(['success' => 'Data hasil konsultasi dan permainan dapat dilihat ditabel yang tersedia']);
+    }
+
+    public function backward(Request $request){
 
         $request->validate([
             'id' => 'required'
@@ -61,20 +128,5 @@ class ConsultationController extends Controller
         $sesi = session()->put('results', $calculate);
         return redirect()->route('dashboard.consul',['step'=> $request->step+1,'prevparam'=> $request->id ]);
     }
-
-    public function finish(Request $request){
-        $results = $request->session()->get('results');
-        $params = [];
-
-        foreach ($results[8]['posibilities'] as $game) {
-            $game = Game::where('id', $game)->get();
-        }
-
-        foreach ($results as $key => $result) {
-            $params[$key] = Parameter::where('id',$result['param_id'])->with('games')->get();
-        }
-        return view('dashboard.consul.finish',compact('params','results','game'));
-    }
-
 
 }
