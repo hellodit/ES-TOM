@@ -38,6 +38,10 @@
         }
     },
     "autoload": {
+        "files": [
+            "app/Helpers/Date.php",
+            "app/Helpers/App.php"
+        ],
         "psr-4": {
             "App\\": "app/"
         },
