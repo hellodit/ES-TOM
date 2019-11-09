@@ -14,7 +14,7 @@
                     <span>Daftar Pengguna</span></a></li>
             <li><a class="nav-link" href="{{route('dashboard.consul')}}"><i class="fas fa-history"></i>
                         <span>Konsultasi</span></a></li>
-            <li><a class="nav-link" href="{{url('dashboard')}}"><i class="fas fa-history"></i>
+            <li><a class="nav-link" href="{{route('dashboard.history')}}"><i class="fas fa-history"></i>
                     <span>Riwayat Konsultasi</span></a></li>
 
             <li class="menu-header">Sistem</li>

@@ -39,18 +39,22 @@
                         <h4>Hasil Permainan</h4>
                     </div>
                     <div class="card-body">
-                        @foreach ($game as $itemga)
-                            <h3>{{$itemga->name}}</h3>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <img src="{{asset("uploads/images/".$itemga->image)}}" class="img-thumbnail" alt="">
+                        @if (!$selectedRule->isEmpty())
+                            @foreach ($selectedRule as $rule)
+                                <h3>{{$rule->game->name}}</h3>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="{{asset("uploads/images/".$rule->game->image)}}" class="img-thumbnail" alt="">
+                                    </div>
+                                    <div class="col-md-9">
+                                            {!!$rule->game->description!!}
+                                            <p class="mb-2"><span class="badge badge-primary">Kode Permainan : {{$rule->game->code}}</span> <span class="badge badge-primary">Kategori : {{$rule->game->category}}</span> </p>
+                                    </div>
                                 </div>
-                                <div class="col-md-9">
-                                        {!!$itemga->description!!}
-                                        <p class="mb-2"><span class="badge badge-primary">Kode Permainan : {{$itemga->code}}</span> <span class="badge badge-primary">Kategori : {{$itemga->category}}</span> </p>
-                                </div>
-                            </div>
-                        @endforeach
+                            @endforeach
+                        @else
+                        <h3>Mohon maaf saat ini data tidak ditemukan</h3>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -61,16 +65,21 @@
                         <div class="card-header">
                                 <h4>Pengisian Konsultasi</h4>
                         </div>
+                        {{-- {{dd($selected)}} --}}
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-striped table-md">
-                                    @foreach ($params as $key => $item)
-                                        <tr>
-                                            <td>{{$key}}</td>
-                                            @foreach ($item as $itemm)
-                                                <td>{{$itemm->name}}</td>
-                                            @endforeach
-                                        </tr>
+                                    <thead>
+                                            <tr>
+                                                    <td>Variabel</td>
+                                                    <td>Parameter</td>
+                                                </tr>
+                                    </thead>
+                                    @foreach ($selected as $key => $item)
+                                    <tr>
+                                        <td>{{$key}}</td>
+                                        <td>{{strip_tags($item->name)}}</td>
+                                    </tr>
                                     @endforeach
                                 </table>
                             </div>
