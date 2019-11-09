@@ -55,14 +55,10 @@ Route::group(['prefix' => 'dashboard','middleware' => 'auth','namespace' => 'Das
 
     Route::get('consul', 'ConsultationController@index')->name('dashboard.consul');
     Route::post('consul/proses', 'ConsultationController@proses')->name('dashboard.consul.proses');
-    Route::get('consul/finish', 'ConsultationController@finish')->name('dashboard.consul.finish');
+    // Route::get('consul/finish', 'ConsultationController@finish')->name('dashboard.consul.finish');
 
-
-    // Route::get('behaviors','BehaviorController@index')->name('dashboard.behaviors');
-    // Route::post('behavior','BehaviorController@store');
-    // Route::get('behavior/form/{id?}','BehaviorController@form');
-    // Route::get('behaviors/data','BehaviorController@data');
-    // Route::delete('behavior/{id}','BehaviorController@destroy');
+    Route::view('consul/finish', 'dashboard.consul.finish')->name('dashboard.consul.finish');
+    Route::get('history', 'HistoryController@index')->name('dashboard.history');
 
     Route::get('users','UserController@index')->name('dashboard.users');
     Route::get('users/data','UserController@data');
