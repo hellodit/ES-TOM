@@ -69,19 +69,22 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-9 col-md-12 col-12 col-sm-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4>Riwayat Konsultasi</h4>
-                        </div>
-                        <div class="card-body">
-                            <div id="transactiondata">
+
+            @can('admin-only', Auth::User())
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Riwayat Konsultasi</h4>
+                            </div>
+                            <div class="card-body">
+                                <div id="transactiondata">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            @endcan
     </div>
 </section>
 @endsection
