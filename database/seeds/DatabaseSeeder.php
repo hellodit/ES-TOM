@@ -14,11 +14,10 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(UserSeeder::class);
         $this->call(UserParentsSeeder::class);
-        $this->call(VariableSeeder::class);
-        $this->call(GamesTableSeeder::class);
+        $this->call(VariablesTableSeeder::class);
         $this->call(ParametersTableSeeder::class);
+        $this->call(GamesTableSeeder::class);
         $this->call(RulesTableSeeder::class);
         $this->call(ParameterRuleTableSeeder::class);
-        $this->call(VariablesTableSeeder::class);
     }
 }

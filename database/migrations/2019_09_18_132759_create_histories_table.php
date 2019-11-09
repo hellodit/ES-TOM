@@ -13,13 +13,13 @@ class CreateHistoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('game_user', function (Blueprint $table) {
+        Schema::create('rule_user', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->char('childname');
             $table->char('user_id',36);
             $table->foreign('user_id')->references('id')->on('users');
-            $table->unsignedBigInteger('game_id');
-            $table->foreign('game_id')->references('id')->on('games');
+            $table->unsignedBigInteger('rule_id');
+            $table->foreign('rule_id')->references('id')->on('games');
             $table->timestamps();
         });
     }
