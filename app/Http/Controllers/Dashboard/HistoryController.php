@@ -15,4 +15,19 @@ class HistoryController extends Controller
         return view('dashboard.history.index',compact('histories'));
     }
 
+    public function destroy($id){
+        $history = History::findOrfail($id);
+        $history->delete();
+
+        return response()->json(array(
+            'success' => 'Aturan telah berhasil dihapus!!',
+            'errors' => false,
+        ), 200);
+    }
+
+    public function show($id){
+        $history = History::where('id',$id)->with('rule.game','rule.params','user')->firstOrFail();
+        return view('dashboard.history.detail',compact('history'));
+    }
+
 }

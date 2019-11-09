@@ -13,4 +13,9 @@ class History extends Model
         return $this->belongsTo('App\Models\Rule');
     }
 
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User');
+    }
+
 }

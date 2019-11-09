@@ -57,8 +57,11 @@ Route::group(['prefix' => 'dashboard','middleware' => 'auth','namespace' => 'Das
     Route::post('consul/proses', 'ConsultationController@proses')->name('dashboard.consul.proses');
     // Route::get('consul/finish', 'ConsultationController@finish')->name('dashboard.consul.finish');
 
-    Route::view('consul/finish', 'dashboard.consul.finish')->name('dashboard.consul.finish');
+    // Route::view('consul/finish', 'dashboard.consul.finish')->name('dashboard.consul.finish');
     Route::get('history', 'HistoryController@index')->name('dashboard.history');
+    Route::get('history/{id}', 'HistoryController@show')->name('dashboard.history.detail');
+    Route::delete('history/{id}', 'HistoryController@destroy')->name('dashboard.history.destroy');
+
 
     Route::get('users','UserController@index')->name('dashboard.users');
     Route::get('users/data','UserController@data');

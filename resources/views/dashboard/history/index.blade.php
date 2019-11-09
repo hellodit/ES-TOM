@@ -42,9 +42,8 @@
                                 <td data-label="kode">{{empty($history->rule->game) ? '-': $history->rule->game->name}}</td>
                                 <td data-label="kode">{!! consts($history->status)!!}</td>
                                 <td data-label="Action" style="min-width:120px">
-                                    <a href="#" class="btn btn-info btn-sm" onclick="actControl('detail','')" role="button" data-toggle="modal" data-target=".bs-modal-lg"
-                                                style="cursor:pointer"><i class="fas fa-eye"></i></a>
-                                    <a href="#" class="btn btn-danger btn-sm" onclick="actControl('delete','')"><i class="fas fa-trash"></i></a>
+                                    <a href="{{route('dashboard.history.detail',$history->id)}}" class="btn btn-dark btn-sm  {{ ($history->status == 'failed') ? 'disabled': null }}"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="btn btn-danger btn-sm" onclick="actControl('delete','{{$history->id}}')"><i class="fas fa-trash"></i></a>
                                 </td>
                             </tr>
                             @endforeach
@@ -70,14 +69,7 @@
 <script src="{{asset('stisla/assets/modules/sweetalert/sweetalert.min.js')}}"></script>
 <script>
     function actControl(x, y, z) {
-        if (x == "data") {
-            $("#data-display").load('{{url("dashboard/rules/data")}}');
-        } else if (x == "form") {
-            $("#form-display").load('{{url("dashboard/rule/form")}}' + "/" + (!y ? "" : y));
-        } else if( x == "detail"){
-            $("#modal-setup").attr("class", "modal-dialog modal-lg");
-            $("#myLargeModalBody").load('{{url("dashboard/rule")}}' +"/"+ (!y ? "" : y ));
-        } else if (x == "delete") {
+        if (x == "delete") {
             var csrf_token = $('meta[name="csrf-token"]').attr('content');
             swal({
                     title: 'Apakah anda setuju untuk menghapus data?',
@@ -89,7 +81,7 @@
                 .then((willDelete) => {
                     if (willDelete) {
                         $.ajax({
-                            url: 'rule/' + y,
+                            url: 'history/' + y,
                             type: "POST",
                             data: {
                                 '_method': 'DELETE',
