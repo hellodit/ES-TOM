@@ -6,5 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class History extends Model
 {
-    protected $fillable =  ['user_id','game_id'];
+    protected $table = "rule_user";
+
+    public function rule()
+    {
+        return $this->belongsTo('App\Models\Rule');
+    }
+
 }

@@ -13,9 +13,19 @@ class Rule extends Model
         return $this->belongsToMany('App\Models\Parameter')->withPivot('parameter_id');
     }
 
+    public function parameters()
+    {
+        return $this->hasManyThrough('App\Models\ParameterRule', 'App\Models\Parameter');
+    }
+
     public function game()
     {
         return $this->belongsTo('App\Models\Game');
+    }
+
+    public function users()
+    {
+        return $this->belongsToMany('App\Models\User');
     }
 
 }

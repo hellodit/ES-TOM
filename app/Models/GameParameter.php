@@ -12,7 +12,6 @@ class GameParameter extends Model
     {
         return $this->belongsTo('App\Models\Rule');
     }
-
     public function parameter()
     {
         return $this->hasMany('App\Models\Parameter', 'id', 'parameter_id');
@@ -22,4 +21,6 @@ class GameParameter extends Model
     {
         return $this->hasMany('App\Models\Game','id','game_id');
     }
+
+
 }

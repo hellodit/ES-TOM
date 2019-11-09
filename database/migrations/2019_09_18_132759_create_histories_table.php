@@ -19,7 +19,7 @@ class CreateHistoriesTable extends Migration
             $table->char('user_id',36);
             $table->foreign('user_id')->references('id')->on('users');
             $table->unsignedBigInteger('rule_id')->nullable();
-            $table->foreign('rule_id')->references('id')->on('games');
+            $table->foreign('rule_id')->references('id')->on('rules');
             $table->char('status');
             $table->timestamps();
         });

@@ -44,9 +44,10 @@ class User extends Authenticatable
         return $this->first_name.' '.$this->last_name;
     }
 
-    public function games()
+    public function rules()
     {
-        return $this->belongsToMany('App\Model\Game');
+        return $this->belongsToMany('App\Models\Rule')->withPivot('id');
     }
 
 }
+
