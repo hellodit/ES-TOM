@@ -26,8 +26,6 @@
                         <td data-label="Action">
                             <a href="#" class="btn btn-primary btn-sm" onclick="actControl('detail','{{$user->id}}')" role="button" data-toggle="modal" data-target=".bs-modal-lg"
                                             style="cursor:pointer"><i class="fas fa-eye"></i></a>
-                            <a href="#" class="btn btn-danger btn-sm" onclick="actControl('delete','{{$user->id}}')"><i
-                                    class="fas fa-trash"></i></a>
                         </td>
                     </tr>
                     @endforeach
