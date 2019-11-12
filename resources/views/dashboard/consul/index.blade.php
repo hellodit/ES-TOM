@@ -66,7 +66,7 @@
                                     </div>
 
 
-                                        <div class="section-title">Rentang usia saat ini</div>
+                                        <div class="section-title">Rentang usia anak saat ini</div>
                                         @foreach ($params['ages'] as $key => $age)
                                             <div class="custom-control custom-radio">
                                             <input type="radio" id="age-{{$key}}" value="{{$age->id}}" name="age" class="custom-control-input  @error('age') is-invalid @enderror" {{!empty(old('age')) ? (old('age') == $age->id) ? 'checked' : null : null }}>
@@ -95,9 +95,25 @@
                                             </div>
                                         @enderror
 
+                                        <div class="section-title">Kemampuan memahami nilai agama dan moral yang dimiliki oleh anak</div>
+                                        @foreach ($params['moralities'] as $key => $morality)
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="morality-{{$key}}" value="{{$morality->id}}" name="morality" class="custom-control-input  @error('morality') is-invalid @enderror"  {{!empty(old('morality')) ? (old('morality') == $morality->id) ? 'checked' : null : null }}>
+                                                <label class="custom-control-label" for="morality-{{$key}}">{{strip_tags($morality->name)}}</label>
+                                            </div>
+                                        @endforeach
+
+                                        @error('morality')
+                                            <div class="invalid-feedback d-block">
+                                                <p></p>{{ $message }}
+                                            </div>
+                                        @enderror
 
 
-                                        <div class="section-title">Kemampuan fisik dan motorik anak</div>
+
+                                </div>
+                                <div class="col-md-6">
+                                        <div class="section-title">Kemampuan fisik dan motorik yang dimiliki oleh anak</div>
                                         @foreach ($params['physicals'] as $key => $physical)
                                             <div class="custom-control custom-radio">
                                                 <input type="radio" id="physical-{{$key}}" value="{{$physical->id}}" name="physical" class="custom-control-input  @error('physical') is-invalid @enderror" {{!empty(old('physical')) ? (old('physical') == $physical->id) ? 'checked' : null : null }}>
@@ -111,22 +127,7 @@
                                         @enderror
 
 
-                                        <div class="section-title">Kemampuan memahami nilai agama dan Moral anak</div>
-                                        @foreach ($params['moralities'] as $key => $morality)
-                                            <div class="custom-control custom-radio">
-                                                <input type="radio" id="morality-{{$key}}" value="{{$morality->id}}" name="morality" class="custom-control-input  @error('morality') is-invalid @enderror"  {{!empty(old('morality')) ? (old('morality') == $morality->id) ? 'checked' : null : null }}>
-                                                <label class="custom-control-label" for="morality-{{$key}}">{{strip_tags($morality->name)}}</label>
-                                            </div>
-                                        @endforeach
-
-                                        @error('morality')
-                                            <div class="invalid-feedback d-block">
-                                                <p></p>{{ $message }}
-                                            </div>
-                                        @enderror
-                                </div>
-                                <div class="col-md-6">
-                                        <div class="section-title">Kemampuan Kognitif dimiliki anak</div>
+                                        <div class="section-title">Kemampuan Kognitif yang dimiliki anak</div>
                                         @foreach ($params['cognitivies'] as $key => $cognitiv)
                                             <div class="custom-control custom-radio">
                                                 <input type="radio" id="cognitiv-{{$key}}" value="{{$cognitiv->id}}" name="cognitiv" class="custom-control-input  @error('cognitiv') is-invalid @enderror"  {{!empty(old('cognitiv')) ? (old('cognitiv') == $cognitiv->id) ? 'checked' : null : null }}>
@@ -139,7 +140,7 @@
                                             </div>
                                         @enderror
 
-                                        <div class="section-title">Kemampuan memahami dan mengungkapkan kata melalui bahasa</div>
+                                        <div class="section-title">Kemampuan memahami dan mengungkapkan perasaan melalui bahasa</div>
                                         @foreach ($params['langs'] as $key => $lang)
                                             <div class="custom-control custom-radio">
                                                 <input type="radio" id="lang-{{$key}}" name="lang" value="{{$lang->id}}" class="custom-control-input  @error('lang') is-invalid @enderror" {{!empty(old('lang')) ? (old('lang') == $lang->id) ? 'checked' : null : null }}>
@@ -153,7 +154,7 @@
                                         </div>
                                         @enderror
 
-                                    <div class="section-title">Kemampuan sosial emosional anak</div>
+                                    <div class="section-title">Kemampuan anak dalam mengungkapkan emosi yang sedang dirasakan serta kemampuan bersosialisasi yang dimiliki</div>
                                     @foreach ($params['social'] as $key => $social)
                                         <div class="custom-control custom-radio">
                                             <input type="radio" id="social-{{$key}}" name="social" value="{{$social->id}}" class="custom-control-input  @error('social') is-invalid @enderror" {{!empty(old('social')) ? (old('social') == $social->id) ? 'checked' : null : null }}>
