@@ -31,7 +31,7 @@ class UserParentsSeeder extends Seeder
             }
         }
 
-        for ($i=0; $i < 25 ; $i++) {
+        for ($i=0; $i < 5 ; $i++) {
 
             $image300 = $faker->image('public/storage/user_photo/300/',300,300, null, false);
             $image60 = $faker->image('public/storage/user_photo/60/',60,60, null, false);
