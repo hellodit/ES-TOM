@@ -21,7 +21,7 @@
                         <td data-label="avatar"><img alt="image" src="{{asset('storage/user_photo/60/'.$user->avatar)}}" class="rounded-circle" width="35" data-toggle="tooltip" title="" data-original-title="{{$user->name}}"></td>
                         <td data-label="name">{{$user->name}}</td>
                         <td data-label="email">{{$user->email}}</td>
-                        <td data-label="name">0</td>
+                        <td data-label="name">{{$user->histories->count()}}  kali</td>
                         <td data-label="created_at">{{$user->created_at->diffForHumans()}}</td>
                         <td data-label="Action">
                             <a href="#" class="btn btn-primary btn-sm" onclick="actControl('detail','{{$user->id}}')" role="button" data-toggle="modal" data-target=".bs-modal-lg"

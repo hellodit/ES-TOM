@@ -33,11 +33,9 @@
         function actControl(x, y, z) {
             if (x == "data") {
                 $("#data-display").load('{{url("dashboard/users/data")}}');
-            } else if (x == "form") {
-                $("#form-display").load('{{url("dashboard/game/form")}}' +"/"+ (!y ? "" : y) );
-            } else if( x == "detail"){
+            }else if( x == "detail"){
                 $("#modal-setup").attr("class", "modal-dialog modal-lg");
-                $("#myLargeModalBody").load('{{url("dashboard/game/detail")}}' +"/"+ (!y ? "" : y ));
+                $("#myLargeModalBody").load('{{url("dashboard/user")}}' +"/"+ (!y ? "" : y ));
             }else if (x == "delete") {
                 var csrf_token = $('meta[name="csrf-token"]').attr('content');
                 swal({

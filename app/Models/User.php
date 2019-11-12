@@ -49,5 +49,10 @@ class User extends Authenticatable
         return $this->belongsToMany('App\Models\Rule')->withPivot('id');
     }
 
+    public function histories()
+    {
+        return $this->hasMany('App\Models\History');
+    }
+
 }
 

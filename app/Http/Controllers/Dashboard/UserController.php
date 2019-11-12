@@ -15,8 +15,16 @@ class UserController extends Controller
 
     public function data(Request $request){
         if($request->ajax()){
-            $users = User::Where('type','=','parent')->paginate(10);
+            $users = User::Where('type','=','parent')->with('histories')->paginate(10);
             return view('dashboard.master-user.data',compact('users'))->render();
         }
+    }
+
+    public function detail($id){
+        $user = User::Where('type','=','parent')
+            ->where('id','=',$id)
+            ->with('histories')
+            ->firstOrFail();
+        return view('dashboard.master-user.detail',compact('user'))->render();
     }
 }

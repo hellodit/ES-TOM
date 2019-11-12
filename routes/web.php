@@ -64,6 +64,8 @@ Route::group(['prefix' => 'dashboard','middleware' => 'auth','namespace' => 'Das
 
 
     Route::get('users','UserController@index')->name('dashboard.users');
+    Route::get('user/{id}','UserController@detail');
+
     Route::get('users/data','UserController@data');
 
 });
