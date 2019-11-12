@@ -28,12 +28,25 @@
                                     <td>{{$history->childname}}</td>
                                 </tr>
                                 <tr>
+                                        <td>Jenis Kelamin</td>
+                                            <td>{{$history->gender == 'L' ? 'Laki-laki' : 'Perempuan'}}</td>
+                                        </tr>
+                                    </tr>
+                                <tr>
+                                    <td>Tannggal Lahir</td>
+                                    <td>{{$history->birthday}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Usia Saat ini</td>
+                                    <td>{{hitungusia($history->birthday)}}</td>
+                                </tr>
+
                                     <td>Tanggal Konsultasi</td>
                                     <td>{{indo_date($history->created_at,true)}}
                                 </td>
                                 </tr>
                                 <tr>
-                                    <td>Status</td>
+                                    <td>Status Konsultasi</td>
                                     <td>{!! consts($history->status)!!}</td>
                                 </tr>
                             </table>

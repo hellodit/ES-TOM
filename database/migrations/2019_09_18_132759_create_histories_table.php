@@ -16,6 +16,8 @@ class CreateHistoriesTable extends Migration
         Schema::create('rule_user', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->char('childname');
+            $table->char('gender');
+            $table->date('birthday');
             $table->char('user_id',36);
             $table->foreign('user_id')->references('id')->on('users');
             $table->unsignedBigInteger('rule_id')->nullable();
