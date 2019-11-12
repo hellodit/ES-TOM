@@ -19,7 +19,7 @@
                         <div class="form-group col">
                             <label class="cabinet center-block">
                                 <figure class="m-0">
-                                    <img src="{{ !empty(\Auth::user()->avatar) ?  asset("storage/user_photo/".\Auth::user()->avatar)  : asset('worktern/images/avatar.png')  }}"
+                                    <img src="{{ !empty(\Auth::user()->avatar) ?  asset("storage/user_photo/".\Auth::user()->avatar)  : asset('stisla/assets/img/avatar/avatar-1.png')   }}"
                                         class="gambar" width="200" height="200" id="item-img-output" />
                                 </figure>
                                 <input type="file" class="item-img file" style="cursor: pointer" name="user_photo" />
