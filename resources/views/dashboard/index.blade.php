@@ -10,13 +10,20 @@
 
 
             <div class="hero bg-primary text-white mb-2">
-                  <div class="hero-inner">
+                <div class="hero-inner">
                     <h2>Selamat datang, {{Auth::user()->name}}!</h2>
-                    <p class="lead">Saat ini anda masuk sebagai {!!Auth::user()->type === 'admin' ? '<mark><i>Admin</i></mark> anda dapat melakukan manajemen keseluruhan sistem termasuk membuat aturan' : '<mark><i>Orang tua</i></mark> anda dapat mengisi kuisoner untuk mendapatkan rekomendasi permainan edukasi yang sesuai dengan karakteristik anak anda' !!}. </p>
+                    <p class="lead">Saat ini anda masuk sebagai {!!Auth::user()->type === 'admin' ?
+                        '<mark><i>Admin</i></mark> anda dapat melakukan manajemen keseluruhan sistem termasuk membuat
+                        aturan' : '<mark><i>Orang tua</i></mark> anda dapat mengisi kuisoner untuk mendapatkan
+                        rekomendasi permainan edukasi yang sesuai dengan karakteristik anak anda' !!}. </p>
                     <div class="mt-4">
-                      <a href="{{route('dashboard.consul')}}" class="btn btn-outline-white btn-lg btn-icon icon-left"><i class="far fa-question-circle"></i>Lihat Kuisoner</a>
+                        <a href="{{route('dashboard.consul')}}"
+                            class="btn btn-outline-white btn-lg btn-icon icon-left"><i
+                                class="far fa-question-circle"></i>Lihat Kuisoner</a>
+                        <a href="{{route('dashboard.games.list')}}" class="pl-3 text-white"> <ins>Lihat Daftar
+                                Permainan<i class="fas fa-chevron-circle-right"></i></ins></a>
                     </div>
-                  </div>
+                </div>
             </div>
 
             <div class="row">
@@ -30,7 +37,7 @@
                                 <h4>Jumlah Penguna</h4>
                             </div>
                             <div class="card-body">
-                               {{$data['users']}}
+                                {{$data['users']}}
                             </div>
                         </div>
                     </div>
