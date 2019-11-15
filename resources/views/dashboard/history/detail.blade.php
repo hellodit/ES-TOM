@@ -10,7 +10,7 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Biodata</h4>
+                        <h4>Biodata Orang Tua & Anak</h4>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -99,7 +99,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Pengisian Konsultasi</h4>
+                        <h4>Riwayat Pengisian Kuesoner</h4>
                     </div>
                     {{-- {{dd($selected)}} --}}
                     <div class="card-body">
