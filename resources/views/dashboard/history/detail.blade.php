@@ -84,7 +84,10 @@
                                 Untuk saat ini tidak ditemukan jenis permainan edukasi yang sesuai dengan kriteria anak
                                 anda. kami akan terus melakukan pembaharuan untuk memberikan lebih banyak pilihan.
                             </p>
-                            <a href="{{route('dashboard.consul')}}" class="btn btn-warning mt-4">Coba Lagi</a>
+                            <a href="{{route('dashboard.consul')}}" class="btn btn-warning">Coba Lagi</a>
+                            <br>
+                            <a href="{{route('dashboard.games.list')}}" class="pl-3"> <ins>Lihat Daftar
+                                    Permainan<i class="fas fa-chevron-circle-right"></i></ins></a>
                         </div>
                         @endif
                     </div>
