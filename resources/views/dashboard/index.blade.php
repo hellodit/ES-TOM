@@ -8,13 +8,17 @@
                 <h1>Dashboard</h1>
             </div>
 
-            <div class="alert alert-info alert-has-icon">
-                    <div class="alert-icon"><i class="far fa-lightbulb"></i></div>
-                    <div class="alert-body">
-                      <div class="alert-title">Selamat datang</div>
-                      Saat ini anda masuk sebagai {!!Auth::user()->type === 'admin' ? '<mark>Admin</mark>' : '<mark>Orangtua</mark>' !!}
+
+            <div class="hero bg-primary text-white mb-2">
+                  <div class="hero-inner">
+                    <h2>Selamat datang, {{Auth::user()->name}}!</h2>
+                    <p class="lead">Saat ini anda masuk sebagai {!!Auth::user()->type === 'admin' ? '<mark><i>Admin</i></mark> anda dapat melakukan manajemen keseluruhan sistem termasuk membuat aturan' : '<mark><i>Orang tua</i></mark> anda dapat mengisi kuisoner untuk mendapatkan rekomendasi permainan edukasi yang sesuai dengan karakteristik anak anda' !!}. </p>
+                    <div class="mt-4">
+                      <a href="{{route('dashboard.consul')}}" class="btn btn-outline-white btn-lg btn-icon icon-left"><i class="far fa-question-circle"></i>Lihat Kuisoner</a>
                     </div>
                   </div>
+            </div>
+
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="card card-statistic-1">
@@ -78,7 +82,7 @@
                 </div>
             </div>
 
-            @can('admin-only', Auth::User())
+            {{-- @can('admin-only', Auth::User())
                 <div class="row">
                     <div class="col-lg-9 col-md-12 col-12 col-sm-12">
                         <div class="card">
@@ -92,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-            @endcan
+            @endcan --}}
     </div>
 </section>
 @endsection
