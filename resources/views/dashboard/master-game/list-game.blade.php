@@ -26,8 +26,8 @@
                 </div>
             </div>
             <div class="article-details">
-                <div class="article-category"><a href="#">Kode Permainan</a>
-                    <div class="bullet"></div> <a href="#">{{$game->code}}</a>
+                <div class="article-category">Kode Permainan
+                    <div class="bullet"></div> {{$game->code}}</a>
                 </div>
                 <div class="article-title">
                     <h2><a href="#">{{$game->name}}</a></h2>
