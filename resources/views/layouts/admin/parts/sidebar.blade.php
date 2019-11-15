@@ -11,7 +11,11 @@
             <li><a class="nav-link" href="{{url('dashboard')}}"><i class="fas fa-pencil-ruler"></i>
                     <span>Dashboard</span></a></li>
 
-            <li><a class="nav-link" href="{{route('dashboard.consul')}}"><i class="fas fa-history"></i>
+            <li><a class="nav-link" href="{{route('dashboard.games.list')}}"><i class="fas fa-dice-six"></i>
+                    <span>Daftar Permainan</span></a></li>
+
+
+            <li><a class="nav-link" href="{{route('dashboard.consul')}}"><i class="far fa-question-circle"></i>
                         <span>Konsultasi</span></a></li>
             <li><a class="nav-link" href="{{route('dashboard.history')}}"><i class="fas fa-history"></i>
                     <span>Riwayat Konsultasi</span></a></li>
@@ -19,7 +23,7 @@
             <li class="menu-header">Sistem</li>
 
             @can('admin-only', Auth::User())
-            <li><a class="nav-link" href="{{route('dashboard.users')}}"><i class="fas fa-user"></i>
+            <li><a class="nav-link" href="{{route('dashboard.users')}}"><i class="fas fa-users"></i>    
                 <span>Daftar Pengguna</span></a></li>
             <li class="nav-item dropdown">
                     <a href="#" class="nav-link has-dropdown"><i class="fas fa-ellipsis-h"></i> <span>Manajemen Data</span></a>

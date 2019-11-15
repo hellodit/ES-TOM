@@ -21,12 +21,14 @@ Route::group(['prefix' => 'dashboard','middleware' => 'auth','namespace' => 'Das
     Route::view('form-changepassword', 'dashboard.setting-account.changepassword');
     Route::post('changepassword', 'SettingProfileController@changePassword');
 
+    Route::get('games/list','GameController@listGame')->name('dashboard.games.list');
     Route::get('games','GameController@index')->name('dashboard.games');
     Route::post('game','GameController@store');
     Route::get('game/form/{id?}','GameController@form');
     Route::get('games/data','GameController@data');
     Route::get('game/detail/{id}','GameController@show');
     Route::delete('game/{id}','GameController@destroy');
+
 
     Route::get('parameters','ParametersController@index')->name('dashboard.parameters');
     Route::post('parameter','ParametersController@store');

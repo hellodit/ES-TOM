@@ -18,6 +18,11 @@ class GameController extends Controller
         return view('dashboard.master-game.index',compact('modal'));
     }
 
+    public function listGame(){
+        $games = Game::latest()->get();
+        return view('dashboard.master-game.list-game',compact('games'));
+    }
+
     public function form($id = null){
         $data['act'] = (empty($id) ? "Tambah Permainan" : "Sunting Permainan");
         $data['url'] = (empty($id) ? url('dashboard/game') : url('dashborad/game/'.$id));
