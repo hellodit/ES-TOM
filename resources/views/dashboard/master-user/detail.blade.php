@@ -16,7 +16,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @if (!empty($user->histories))
+                        @if (!$user->histories->isEmpty())
                             @foreach ($user->histories as $key =>  $history)
                             <tr>
                                 <td data-label="No">{{$key+1}}</td>
@@ -31,7 +31,7 @@
                             @endforeach
                         @else
                             <tr>
-                                <td colspan="6" class="text-center">Maaf untuk saat ini data yang anda cari belum tersedia, silahkan melakukan konsultasi melalui menu yang tersedia.</td>
+                                <td colspan="6" class="text-center">Maaf untuk saat ini data yang anda cari belum tersedia</td>
                             </tr>
                         @endif
                     </tbody>
@@ -42,5 +42,5 @@
     </div>
 </div>
 <script type="text/javascript">
-    $("#myLargeModalLabel").html("Riwayat Konsuktasi");
+    $("#myLargeModalLabel").html("Riwayat konsultasi");
 </script>
