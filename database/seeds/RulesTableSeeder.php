@@ -337,6 +337,230 @@ class RulesTableSeeder extends Seeder
                 'created_at' => '2019-11-12 11:47:25',
                 'updated_at' => '2019-11-12 11:47:25',
             ),
+            40 => 
+            array (
+                'id' => 41,
+                'name' => 'Aturan 41',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:21:48',
+                'updated_at' => '2019-11-18 00:21:48',
+            ),
+            41 => 
+            array (
+                'id' => 42,
+                'name' => 'Aturan 42',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:22:30',
+                'updated_at' => '2019-11-18 00:22:30',
+            ),
+            42 => 
+            array (
+                'id' => 43,
+                'name' => 'Aturan 43',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:23:05',
+                'updated_at' => '2019-11-18 00:23:05',
+            ),
+            43 => 
+            array (
+                'id' => 44,
+                'name' => 'Aturan 44',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:24:05',
+                'updated_at' => '2019-11-18 00:24:05',
+            ),
+            44 => 
+            array (
+                'id' => 45,
+                'name' => 'Aturan 45',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:25:12',
+                'updated_at' => '2019-11-18 00:25:12',
+            ),
+            45 => 
+            array (
+                'id' => 46,
+                'name' => 'Aturan 46',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:25:41',
+                'updated_at' => '2019-11-18 00:25:41',
+            ),
+            46 => 
+            array (
+                'id' => 47,
+                'name' => 'Aturan 47',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:26:33',
+                'updated_at' => '2019-11-18 00:26:33',
+            ),
+            47 => 
+            array (
+                'id' => 48,
+                'name' => 'Aturan 48',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:27:13',
+                'updated_at' => '2019-11-18 00:27:13',
+            ),
+            48 => 
+            array (
+                'id' => 49,
+                'name' => 'Aturan 49',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:28:00',
+                'updated_at' => '2019-11-18 00:28:00',
+            ),
+            49 => 
+            array (
+                'id' => 50,
+                'name' => 'Aturan 50',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:28:52',
+                'updated_at' => '2019-11-18 00:28:52',
+            ),
+            50 => 
+            array (
+                'id' => 51,
+                'name' => 'Aturan 51',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:29:49',
+                'updated_at' => '2019-11-18 00:29:49',
+            ),
+            51 => 
+            array (
+                'id' => 52,
+                'name' => 'Aturan 52',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:30:24',
+                'updated_at' => '2019-11-18 00:30:24',
+            ),
+            52 => 
+            array (
+                'id' => 53,
+                'name' => 'Aturan 53',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:31:00',
+                'updated_at' => '2019-11-18 00:31:00',
+            ),
+            53 => 
+            array (
+                'id' => 54,
+                'name' => 'Aturan 54',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:31:39',
+                'updated_at' => '2019-11-18 00:31:39',
+            ),
+            54 => 
+            array (
+                'id' => 55,
+                'name' => 'Aturan 55',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:32:20',
+                'updated_at' => '2019-11-18 00:32:20',
+            ),
+            55 => 
+            array (
+                'id' => 56,
+                'name' => 'Aturan 56',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:33:15',
+                'updated_at' => '2019-11-18 00:33:15',
+            ),
+            56 => 
+            array (
+                'id' => 57,
+                'name' => 'Aturan 57',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:33:46',
+                'updated_at' => '2019-11-18 00:33:46',
+            ),
+            57 => 
+            array (
+                'id' => 58,
+                'name' => 'Aturan 58',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:34:25',
+                'updated_at' => '2019-11-18 00:34:25',
+            ),
+            58 => 
+            array (
+                'id' => 59,
+                'name' => 'Aturan 59',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:35:01',
+                'updated_at' => '2019-11-18 00:35:01',
+            ),
+            59 => 
+            array (
+                'id' => 60,
+                'name' => 'Aturan 60',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:35:31',
+                'updated_at' => '2019-11-18 00:35:31',
+            ),
+            60 => 
+            array (
+                'id' => 61,
+                'name' => 'Aturan 61',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:36:06',
+                'updated_at' => '2019-11-18 00:36:06',
+            ),
+            61 => 
+            array (
+                'id' => 62,
+                'name' => 'Aturan 62',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:36:46',
+                'updated_at' => '2019-11-18 00:36:46',
+            ),
+            62 => 
+            array (
+                'id' => 63,
+                'name' => 'Aturan 63',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:37:34',
+                'updated_at' => '2019-11-18 00:37:34',
+            ),
+            63 => 
+            array (
+                'id' => 64,
+                'name' => 'Aturan 64',
+                'game_id' => 6,
+                'created_at' => '2019-11-18 00:38:15',
+                'updated_at' => '2019-11-18 00:38:15',
+            ),
+            64 => 
+            array (
+                'id' => 65,
+                'name' => 'Aturan 65',
+                'game_id' => 7,
+                'created_at' => '2019-11-18 00:38:47',
+                'updated_at' => '2019-11-18 00:38:47',
+            ),
+            65 => 
+            array (
+                'id' => 66,
+                'name' => 'Aturan 66',
+                'game_id' => 7,
+                'created_at' => '2019-11-18 00:39:17',
+                'updated_at' => '2019-11-18 00:39:17',
+            ),
+            66 => 
+            array (
+                'id' => 67,
+                'name' => 'Aturan 67',
+                'game_id' => 8,
+                'created_at' => '2019-11-18 00:40:10',
+                'updated_at' => '2019-11-18 00:41:11',
+            ),
+            67 => 
+            array (
+                'id' => 68,
+                'name' => 'Aturan 68',
+                'game_id' => 8,
+                'created_at' => '2019-11-18 00:40:43',
+                'updated_at' => '2019-11-18 00:40:43',
+            ),
         ));
         
         

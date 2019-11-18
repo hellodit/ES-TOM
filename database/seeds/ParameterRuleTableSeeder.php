@@ -2577,6 +2577,1800 @@ class ParameterRuleTableSeeder extends Seeder
                 'created_at' => '2019-11-12 11:47:25',
                 'updated_at' => '2019-11-12 11:47:25',
             ),
+            320 => 
+            array (
+                'id' => 321,
+                'parameter_id' => 2,
+                'rule_id' => 41,
+                'created_at' => '2019-11-18 00:21:48',
+                'updated_at' => '2019-11-18 00:21:48',
+            ),
+            321 => 
+            array (
+                'id' => 322,
+                'parameter_id' => 6,
+                'rule_id' => 41,
+                'created_at' => '2019-11-18 00:21:48',
+                'updated_at' => '2019-11-18 00:21:48',
+            ),
+            322 => 
+            array (
+                'id' => 323,
+                'parameter_id' => 10,
+                'rule_id' => 41,
+                'created_at' => '2019-11-18 00:21:48',
+                'updated_at' => '2019-11-18 00:21:48',
+            ),
+            323 => 
+            array (
+                'id' => 324,
+                'parameter_id' => 12,
+                'rule_id' => 41,
+                'created_at' => '2019-11-18 00:21:48',
+                'updated_at' => '2019-11-18 00:21:48',
+            ),
+            324 => 
+            array (
+                'id' => 325,
+                'parameter_id' => 14,
+                'rule_id' => 41,
+                'created_at' => '2019-11-18 00:21:48',
+                'updated_at' => '2019-11-18 00:21:48',
+            ),
+            325 => 
+            array (
+                'id' => 326,
+                'parameter_id' => 18,
+                'rule_id' => 41,
+                'created_at' => '2019-11-18 00:21:48',
+                'updated_at' => '2019-11-18 00:21:48',
+            ),
+            326 => 
+            array (
+                'id' => 327,
+                'parameter_id' => 22,
+                'rule_id' => 41,
+                'created_at' => '2019-11-18 00:21:48',
+                'updated_at' => '2019-11-18 00:21:48',
+            ),
+            327 => 
+            array (
+                'id' => 328,
+                'parameter_id' => 27,
+                'rule_id' => 41,
+                'created_at' => '2019-11-18 00:21:48',
+                'updated_at' => '2019-11-18 00:21:48',
+            ),
+            328 => 
+            array (
+                'id' => 329,
+                'parameter_id' => 2,
+                'rule_id' => 42,
+                'created_at' => '2019-11-18 00:22:30',
+                'updated_at' => '2019-11-18 00:22:30',
+            ),
+            329 => 
+            array (
+                'id' => 330,
+                'parameter_id' => 6,
+                'rule_id' => 42,
+                'created_at' => '2019-11-18 00:22:30',
+                'updated_at' => '2019-11-18 00:22:30',
+            ),
+            330 => 
+            array (
+                'id' => 331,
+                'parameter_id' => 10,
+                'rule_id' => 42,
+                'created_at' => '2019-11-18 00:22:30',
+                'updated_at' => '2019-11-18 00:22:30',
+            ),
+            331 => 
+            array (
+                'id' => 332,
+                'parameter_id' => 12,
+                'rule_id' => 42,
+                'created_at' => '2019-11-18 00:22:30',
+                'updated_at' => '2019-11-18 00:22:30',
+            ),
+            332 => 
+            array (
+                'id' => 333,
+                'parameter_id' => 14,
+                'rule_id' => 42,
+                'created_at' => '2019-11-18 00:22:30',
+                'updated_at' => '2019-11-18 00:22:30',
+            ),
+            333 => 
+            array (
+                'id' => 334,
+                'parameter_id' => 19,
+                'rule_id' => 42,
+                'created_at' => '2019-11-18 00:22:30',
+                'updated_at' => '2019-11-18 00:22:30',
+            ),
+            334 => 
+            array (
+                'id' => 335,
+                'parameter_id' => 22,
+                'rule_id' => 42,
+                'created_at' => '2019-11-18 00:22:30',
+                'updated_at' => '2019-11-18 00:22:30',
+            ),
+            335 => 
+            array (
+                'id' => 336,
+                'parameter_id' => 27,
+                'rule_id' => 42,
+                'created_at' => '2019-11-18 00:22:30',
+                'updated_at' => '2019-11-18 00:22:30',
+            ),
+            336 => 
+            array (
+                'id' => 337,
+                'parameter_id' => 2,
+                'rule_id' => 43,
+                'created_at' => '2019-11-18 00:23:05',
+                'updated_at' => '2019-11-18 00:23:05',
+            ),
+            337 => 
+            array (
+                'id' => 338,
+                'parameter_id' => 4,
+                'rule_id' => 43,
+                'created_at' => '2019-11-18 00:23:05',
+                'updated_at' => '2019-11-18 00:23:05',
+            ),
+            338 => 
+            array (
+                'id' => 339,
+                'parameter_id' => 6,
+                'rule_id' => 43,
+                'created_at' => '2019-11-18 00:23:05',
+                'updated_at' => '2019-11-18 00:23:05',
+            ),
+            339 => 
+            array (
+                'id' => 340,
+                'parameter_id' => 10,
+                'rule_id' => 43,
+                'created_at' => '2019-11-18 00:23:05',
+                'updated_at' => '2019-11-18 00:23:05',
+            ),
+            340 => 
+            array (
+                'id' => 341,
+                'parameter_id' => 12,
+                'rule_id' => 43,
+                'created_at' => '2019-11-18 00:23:05',
+                'updated_at' => '2019-11-18 00:23:05',
+            ),
+            341 => 
+            array (
+                'id' => 342,
+                'parameter_id' => 17,
+                'rule_id' => 43,
+                'created_at' => '2019-11-18 00:23:05',
+                'updated_at' => '2019-11-18 00:23:05',
+            ),
+            342 => 
+            array (
+                'id' => 343,
+                'parameter_id' => 22,
+                'rule_id' => 43,
+                'created_at' => '2019-11-18 00:23:05',
+                'updated_at' => '2019-11-18 00:23:05',
+            ),
+            343 => 
+            array (
+                'id' => 344,
+                'parameter_id' => 27,
+                'rule_id' => 43,
+                'created_at' => '2019-11-18 00:23:05',
+                'updated_at' => '2019-11-18 00:23:05',
+            ),
+            344 => 
+            array (
+                'id' => 345,
+                'parameter_id' => 2,
+                'rule_id' => 44,
+                'created_at' => '2019-11-18 00:24:05',
+                'updated_at' => '2019-11-18 00:24:05',
+            ),
+            345 => 
+            array (
+                'id' => 346,
+                'parameter_id' => 6,
+                'rule_id' => 44,
+                'created_at' => '2019-11-18 00:24:05',
+                'updated_at' => '2019-11-18 00:24:05',
+            ),
+            346 => 
+            array (
+                'id' => 347,
+                'parameter_id' => 10,
+                'rule_id' => 44,
+                'created_at' => '2019-11-18 00:24:05',
+                'updated_at' => '2019-11-18 00:24:05',
+            ),
+            347 => 
+            array (
+                'id' => 348,
+                'parameter_id' => 12,
+                'rule_id' => 44,
+                'created_at' => '2019-11-18 00:24:05',
+                'updated_at' => '2019-11-18 00:24:05',
+            ),
+            348 => 
+            array (
+                'id' => 349,
+                'parameter_id' => 17,
+                'rule_id' => 44,
+                'created_at' => '2019-11-18 00:24:05',
+                'updated_at' => '2019-11-18 00:24:05',
+            ),
+            349 => 
+            array (
+                'id' => 350,
+                'parameter_id' => 19,
+                'rule_id' => 44,
+                'created_at' => '2019-11-18 00:24:05',
+                'updated_at' => '2019-11-18 00:24:05',
+            ),
+            350 => 
+            array (
+                'id' => 351,
+                'parameter_id' => 22,
+                'rule_id' => 44,
+                'created_at' => '2019-11-18 00:24:05',
+                'updated_at' => '2019-11-18 00:24:05',
+            ),
+            351 => 
+            array (
+                'id' => 352,
+                'parameter_id' => 27,
+                'rule_id' => 44,
+                'created_at' => '2019-11-18 00:24:05',
+                'updated_at' => '2019-11-18 00:24:05',
+            ),
+            352 => 
+            array (
+                'id' => 353,
+                'parameter_id' => 2,
+                'rule_id' => 45,
+                'created_at' => '2019-11-18 00:25:12',
+                'updated_at' => '2019-11-18 00:25:12',
+            ),
+            353 => 
+            array (
+                'id' => 354,
+                'parameter_id' => 6,
+                'rule_id' => 45,
+                'created_at' => '2019-11-18 00:25:12',
+                'updated_at' => '2019-11-18 00:25:12',
+            ),
+            354 => 
+            array (
+                'id' => 355,
+                'parameter_id' => 10,
+                'rule_id' => 45,
+                'created_at' => '2019-11-18 00:25:12',
+                'updated_at' => '2019-11-18 00:25:12',
+            ),
+            355 => 
+            array (
+                'id' => 356,
+                'parameter_id' => 13,
+                'rule_id' => 45,
+                'created_at' => '2019-11-18 00:25:12',
+                'updated_at' => '2019-11-18 00:25:12',
+            ),
+            356 => 
+            array (
+                'id' => 357,
+                'parameter_id' => 14,
+                'rule_id' => 45,
+                'created_at' => '2019-11-18 00:25:12',
+                'updated_at' => '2019-11-18 00:25:12',
+            ),
+            357 => 
+            array (
+                'id' => 358,
+                'parameter_id' => 18,
+                'rule_id' => 45,
+                'created_at' => '2019-11-18 00:25:12',
+                'updated_at' => '2019-11-18 00:25:12',
+            ),
+            358 => 
+            array (
+                'id' => 359,
+                'parameter_id' => 22,
+                'rule_id' => 45,
+                'created_at' => '2019-11-18 00:25:12',
+                'updated_at' => '2019-11-18 00:25:12',
+            ),
+            359 => 
+            array (
+                'id' => 360,
+                'parameter_id' => 27,
+                'rule_id' => 45,
+                'created_at' => '2019-11-18 00:25:12',
+                'updated_at' => '2019-11-18 00:25:12',
+            ),
+            360 => 
+            array (
+                'id' => 361,
+                'parameter_id' => 2,
+                'rule_id' => 46,
+                'created_at' => '2019-11-18 00:25:41',
+                'updated_at' => '2019-11-18 00:25:41',
+            ),
+            361 => 
+            array (
+                'id' => 362,
+                'parameter_id' => 6,
+                'rule_id' => 46,
+                'created_at' => '2019-11-18 00:25:41',
+                'updated_at' => '2019-11-18 00:25:41',
+            ),
+            362 => 
+            array (
+                'id' => 363,
+                'parameter_id' => 10,
+                'rule_id' => 46,
+                'created_at' => '2019-11-18 00:25:41',
+                'updated_at' => '2019-11-18 00:25:41',
+            ),
+            363 => 
+            array (
+                'id' => 364,
+                'parameter_id' => 13,
+                'rule_id' => 46,
+                'created_at' => '2019-11-18 00:25:41',
+                'updated_at' => '2019-11-18 00:25:41',
+            ),
+            364 => 
+            array (
+                'id' => 365,
+                'parameter_id' => 14,
+                'rule_id' => 46,
+                'created_at' => '2019-11-18 00:25:41',
+                'updated_at' => '2019-11-18 00:25:41',
+            ),
+            365 => 
+            array (
+                'id' => 366,
+                'parameter_id' => 19,
+                'rule_id' => 46,
+                'created_at' => '2019-11-18 00:25:41',
+                'updated_at' => '2019-11-18 00:25:41',
+            ),
+            366 => 
+            array (
+                'id' => 367,
+                'parameter_id' => 22,
+                'rule_id' => 46,
+                'created_at' => '2019-11-18 00:25:41',
+                'updated_at' => '2019-11-18 00:25:41',
+            ),
+            367 => 
+            array (
+                'id' => 368,
+                'parameter_id' => 27,
+                'rule_id' => 46,
+                'created_at' => '2019-11-18 00:25:41',
+                'updated_at' => '2019-11-18 00:25:41',
+            ),
+            368 => 
+            array (
+                'id' => 369,
+                'parameter_id' => 2,
+                'rule_id' => 47,
+                'created_at' => '2019-11-18 00:26:33',
+                'updated_at' => '2019-11-18 00:26:33',
+            ),
+            369 => 
+            array (
+                'id' => 370,
+                'parameter_id' => 6,
+                'rule_id' => 47,
+                'created_at' => '2019-11-18 00:26:33',
+                'updated_at' => '2019-11-18 00:26:33',
+            ),
+            370 => 
+            array (
+                'id' => 371,
+                'parameter_id' => 10,
+                'rule_id' => 47,
+                'created_at' => '2019-11-18 00:26:33',
+                'updated_at' => '2019-11-18 00:26:33',
+            ),
+            371 => 
+            array (
+                'id' => 372,
+                'parameter_id' => 13,
+                'rule_id' => 47,
+                'created_at' => '2019-11-18 00:26:33',
+                'updated_at' => '2019-11-18 00:26:33',
+            ),
+            372 => 
+            array (
+                'id' => 373,
+                'parameter_id' => 17,
+                'rule_id' => 47,
+                'created_at' => '2019-11-18 00:26:33',
+                'updated_at' => '2019-11-18 00:26:33',
+            ),
+            373 => 
+            array (
+                'id' => 374,
+                'parameter_id' => 18,
+                'rule_id' => 47,
+                'created_at' => '2019-11-18 00:26:33',
+                'updated_at' => '2019-11-18 00:26:33',
+            ),
+            374 => 
+            array (
+                'id' => 375,
+                'parameter_id' => 22,
+                'rule_id' => 47,
+                'created_at' => '2019-11-18 00:26:33',
+                'updated_at' => '2019-11-18 00:26:33',
+            ),
+            375 => 
+            array (
+                'id' => 376,
+                'parameter_id' => 27,
+                'rule_id' => 47,
+                'created_at' => '2019-11-18 00:26:33',
+                'updated_at' => '2019-11-18 00:26:33',
+            ),
+            376 => 
+            array (
+                'id' => 377,
+                'parameter_id' => 2,
+                'rule_id' => 48,
+                'created_at' => '2019-11-18 00:27:13',
+                'updated_at' => '2019-11-18 00:27:13',
+            ),
+            377 => 
+            array (
+                'id' => 378,
+                'parameter_id' => 6,
+                'rule_id' => 48,
+                'created_at' => '2019-11-18 00:27:13',
+                'updated_at' => '2019-11-18 00:27:13',
+            ),
+            378 => 
+            array (
+                'id' => 379,
+                'parameter_id' => 10,
+                'rule_id' => 48,
+                'created_at' => '2019-11-18 00:27:13',
+                'updated_at' => '2019-11-18 00:27:13',
+            ),
+            379 => 
+            array (
+                'id' => 380,
+                'parameter_id' => 13,
+                'rule_id' => 48,
+                'created_at' => '2019-11-18 00:27:13',
+                'updated_at' => '2019-11-18 00:27:13',
+            ),
+            380 => 
+            array (
+                'id' => 381,
+                'parameter_id' => 17,
+                'rule_id' => 48,
+                'created_at' => '2019-11-18 00:27:13',
+                'updated_at' => '2019-11-18 00:27:13',
+            ),
+            381 => 
+            array (
+                'id' => 382,
+                'parameter_id' => 19,
+                'rule_id' => 48,
+                'created_at' => '2019-11-18 00:27:13',
+                'updated_at' => '2019-11-18 00:27:13',
+            ),
+            382 => 
+            array (
+                'id' => 383,
+                'parameter_id' => 22,
+                'rule_id' => 48,
+                'created_at' => '2019-11-18 00:27:13',
+                'updated_at' => '2019-11-18 00:27:13',
+            ),
+            383 => 
+            array (
+                'id' => 384,
+                'parameter_id' => 27,
+                'rule_id' => 48,
+                'created_at' => '2019-11-18 00:27:13',
+                'updated_at' => '2019-11-18 00:27:13',
+            ),
+            384 => 
+            array (
+                'id' => 385,
+                'parameter_id' => 3,
+                'rule_id' => 49,
+                'created_at' => '2019-11-18 00:28:00',
+                'updated_at' => '2019-11-18 00:28:00',
+            ),
+            385 => 
+            array (
+                'id' => 386,
+                'parameter_id' => 5,
+                'rule_id' => 49,
+                'created_at' => '2019-11-18 00:28:00',
+                'updated_at' => '2019-11-18 00:28:00',
+            ),
+            386 => 
+            array (
+                'id' => 387,
+                'parameter_id' => 10,
+                'rule_id' => 49,
+                'created_at' => '2019-11-18 00:28:00',
+                'updated_at' => '2019-11-18 00:28:00',
+            ),
+            387 => 
+            array (
+                'id' => 388,
+                'parameter_id' => 12,
+                'rule_id' => 49,
+                'created_at' => '2019-11-18 00:28:00',
+                'updated_at' => '2019-11-18 00:28:00',
+            ),
+            388 => 
+            array (
+                'id' => 389,
+                'parameter_id' => 14,
+                'rule_id' => 49,
+                'created_at' => '2019-11-18 00:28:00',
+                'updated_at' => '2019-11-18 00:28:00',
+            ),
+            389 => 
+            array (
+                'id' => 390,
+                'parameter_id' => 18,
+                'rule_id' => 49,
+                'created_at' => '2019-11-18 00:28:00',
+                'updated_at' => '2019-11-18 00:28:00',
+            ),
+            390 => 
+            array (
+                'id' => 391,
+                'parameter_id' => 22,
+                'rule_id' => 49,
+                'created_at' => '2019-11-18 00:28:00',
+                'updated_at' => '2019-11-18 00:28:00',
+            ),
+            391 => 
+            array (
+                'id' => 392,
+                'parameter_id' => 27,
+                'rule_id' => 49,
+                'created_at' => '2019-11-18 00:28:00',
+                'updated_at' => '2019-11-18 00:28:00',
+            ),
+            392 => 
+            array (
+                'id' => 393,
+                'parameter_id' => 3,
+                'rule_id' => 50,
+                'created_at' => '2019-11-18 00:28:52',
+                'updated_at' => '2019-11-18 00:28:52',
+            ),
+            393 => 
+            array (
+                'id' => 394,
+                'parameter_id' => 5,
+                'rule_id' => 50,
+                'created_at' => '2019-11-18 00:28:52',
+                'updated_at' => '2019-11-18 00:28:52',
+            ),
+            394 => 
+            array (
+                'id' => 395,
+                'parameter_id' => 10,
+                'rule_id' => 50,
+                'created_at' => '2019-11-18 00:28:52',
+                'updated_at' => '2019-11-18 00:28:52',
+            ),
+            395 => 
+            array (
+                'id' => 396,
+                'parameter_id' => 12,
+                'rule_id' => 50,
+                'created_at' => '2019-11-18 00:28:52',
+                'updated_at' => '2019-11-18 00:28:52',
+            ),
+            396 => 
+            array (
+                'id' => 397,
+                'parameter_id' => 14,
+                'rule_id' => 50,
+                'created_at' => '2019-11-18 00:28:52',
+                'updated_at' => '2019-11-18 00:28:52',
+            ),
+            397 => 
+            array (
+                'id' => 398,
+                'parameter_id' => 19,
+                'rule_id' => 50,
+                'created_at' => '2019-11-18 00:28:52',
+                'updated_at' => '2019-11-18 00:28:52',
+            ),
+            398 => 
+            array (
+                'id' => 399,
+                'parameter_id' => 22,
+                'rule_id' => 50,
+                'created_at' => '2019-11-18 00:28:52',
+                'updated_at' => '2019-11-18 00:28:52',
+            ),
+            399 => 
+            array (
+                'id' => 400,
+                'parameter_id' => 27,
+                'rule_id' => 50,
+                'created_at' => '2019-11-18 00:28:52',
+                'updated_at' => '2019-11-18 00:28:52',
+            ),
+            400 => 
+            array (
+                'id' => 401,
+                'parameter_id' => 3,
+                'rule_id' => 51,
+                'created_at' => '2019-11-18 00:29:49',
+                'updated_at' => '2019-11-18 00:29:49',
+            ),
+            401 => 
+            array (
+                'id' => 402,
+                'parameter_id' => 5,
+                'rule_id' => 51,
+                'created_at' => '2019-11-18 00:29:49',
+                'updated_at' => '2019-11-18 00:29:49',
+            ),
+            402 => 
+            array (
+                'id' => 403,
+                'parameter_id' => 10,
+                'rule_id' => 51,
+                'created_at' => '2019-11-18 00:29:49',
+                'updated_at' => '2019-11-18 00:29:49',
+            ),
+            403 => 
+            array (
+                'id' => 404,
+                'parameter_id' => 12,
+                'rule_id' => 51,
+                'created_at' => '2019-11-18 00:29:49',
+                'updated_at' => '2019-11-18 00:29:49',
+            ),
+            404 => 
+            array (
+                'id' => 405,
+                'parameter_id' => 17,
+                'rule_id' => 51,
+                'created_at' => '2019-11-18 00:29:49',
+                'updated_at' => '2019-11-18 00:29:49',
+            ),
+            405 => 
+            array (
+                'id' => 406,
+                'parameter_id' => 18,
+                'rule_id' => 51,
+                'created_at' => '2019-11-18 00:29:49',
+                'updated_at' => '2019-11-18 00:29:49',
+            ),
+            406 => 
+            array (
+                'id' => 407,
+                'parameter_id' => 22,
+                'rule_id' => 51,
+                'created_at' => '2019-11-18 00:29:49',
+                'updated_at' => '2019-11-18 00:29:49',
+            ),
+            407 => 
+            array (
+                'id' => 408,
+                'parameter_id' => 27,
+                'rule_id' => 51,
+                'created_at' => '2019-11-18 00:29:49',
+                'updated_at' => '2019-11-18 00:29:49',
+            ),
+            408 => 
+            array (
+                'id' => 409,
+                'parameter_id' => 3,
+                'rule_id' => 52,
+                'created_at' => '2019-11-18 00:30:24',
+                'updated_at' => '2019-11-18 00:30:24',
+            ),
+            409 => 
+            array (
+                'id' => 410,
+                'parameter_id' => 5,
+                'rule_id' => 52,
+                'created_at' => '2019-11-18 00:30:24',
+                'updated_at' => '2019-11-18 00:30:24',
+            ),
+            410 => 
+            array (
+                'id' => 411,
+                'parameter_id' => 10,
+                'rule_id' => 52,
+                'created_at' => '2019-11-18 00:30:24',
+                'updated_at' => '2019-11-18 00:30:24',
+            ),
+            411 => 
+            array (
+                'id' => 412,
+                'parameter_id' => 12,
+                'rule_id' => 52,
+                'created_at' => '2019-11-18 00:30:24',
+                'updated_at' => '2019-11-18 00:30:24',
+            ),
+            412 => 
+            array (
+                'id' => 413,
+                'parameter_id' => 17,
+                'rule_id' => 52,
+                'created_at' => '2019-11-18 00:30:24',
+                'updated_at' => '2019-11-18 00:30:24',
+            ),
+            413 => 
+            array (
+                'id' => 414,
+                'parameter_id' => 18,
+                'rule_id' => 52,
+                'created_at' => '2019-11-18 00:30:24',
+                'updated_at' => '2019-11-18 00:30:24',
+            ),
+            414 => 
+            array (
+                'id' => 415,
+                'parameter_id' => 22,
+                'rule_id' => 52,
+                'created_at' => '2019-11-18 00:30:24',
+                'updated_at' => '2019-11-18 00:30:24',
+            ),
+            415 => 
+            array (
+                'id' => 416,
+                'parameter_id' => 27,
+                'rule_id' => 52,
+                'created_at' => '2019-11-18 00:30:24',
+                'updated_at' => '2019-11-18 00:30:24',
+            ),
+            416 => 
+            array (
+                'id' => 417,
+                'parameter_id' => 3,
+                'rule_id' => 53,
+                'created_at' => '2019-11-18 00:31:00',
+                'updated_at' => '2019-11-18 00:31:00',
+            ),
+            417 => 
+            array (
+                'id' => 418,
+                'parameter_id' => 5,
+                'rule_id' => 53,
+                'created_at' => '2019-11-18 00:31:00',
+                'updated_at' => '2019-11-18 00:31:00',
+            ),
+            418 => 
+            array (
+                'id' => 419,
+                'parameter_id' => 10,
+                'rule_id' => 53,
+                'created_at' => '2019-11-18 00:31:00',
+                'updated_at' => '2019-11-18 00:31:00',
+            ),
+            419 => 
+            array (
+                'id' => 420,
+                'parameter_id' => 12,
+                'rule_id' => 53,
+                'created_at' => '2019-11-18 00:31:00',
+                'updated_at' => '2019-11-18 00:31:00',
+            ),
+            420 => 
+            array (
+                'id' => 421,
+                'parameter_id' => 17,
+                'rule_id' => 53,
+                'created_at' => '2019-11-18 00:31:00',
+                'updated_at' => '2019-11-18 00:31:00',
+            ),
+            421 => 
+            array (
+                'id' => 422,
+                'parameter_id' => 19,
+                'rule_id' => 53,
+                'created_at' => '2019-11-18 00:31:00',
+                'updated_at' => '2019-11-18 00:31:00',
+            ),
+            422 => 
+            array (
+                'id' => 423,
+                'parameter_id' => 22,
+                'rule_id' => 53,
+                'created_at' => '2019-11-18 00:31:00',
+                'updated_at' => '2019-11-18 00:31:00',
+            ),
+            423 => 
+            array (
+                'id' => 424,
+                'parameter_id' => 27,
+                'rule_id' => 53,
+                'created_at' => '2019-11-18 00:31:00',
+                'updated_at' => '2019-11-18 00:31:00',
+            ),
+            424 => 
+            array (
+                'id' => 425,
+                'parameter_id' => 3,
+                'rule_id' => 54,
+                'created_at' => '2019-11-18 00:31:40',
+                'updated_at' => '2019-11-18 00:31:40',
+            ),
+            425 => 
+            array (
+                'id' => 426,
+                'parameter_id' => 5,
+                'rule_id' => 54,
+                'created_at' => '2019-11-18 00:31:40',
+                'updated_at' => '2019-11-18 00:31:40',
+            ),
+            426 => 
+            array (
+                'id' => 427,
+                'parameter_id' => 10,
+                'rule_id' => 54,
+                'created_at' => '2019-11-18 00:31:40',
+                'updated_at' => '2019-11-18 00:31:40',
+            ),
+            427 => 
+            array (
+                'id' => 428,
+                'parameter_id' => 13,
+                'rule_id' => 54,
+                'created_at' => '2019-11-18 00:31:40',
+                'updated_at' => '2019-11-18 00:31:40',
+            ),
+            428 => 
+            array (
+                'id' => 429,
+                'parameter_id' => 14,
+                'rule_id' => 54,
+                'created_at' => '2019-11-18 00:31:40',
+                'updated_at' => '2019-11-18 00:31:40',
+            ),
+            429 => 
+            array (
+                'id' => 430,
+                'parameter_id' => 19,
+                'rule_id' => 54,
+                'created_at' => '2019-11-18 00:31:40',
+                'updated_at' => '2019-11-18 00:31:40',
+            ),
+            430 => 
+            array (
+                'id' => 431,
+                'parameter_id' => 22,
+                'rule_id' => 54,
+                'created_at' => '2019-11-18 00:31:40',
+                'updated_at' => '2019-11-18 00:31:40',
+            ),
+            431 => 
+            array (
+                'id' => 432,
+                'parameter_id' => 27,
+                'rule_id' => 54,
+                'created_at' => '2019-11-18 00:31:40',
+                'updated_at' => '2019-11-18 00:31:40',
+            ),
+            432 => 
+            array (
+                'id' => 433,
+                'parameter_id' => 3,
+                'rule_id' => 55,
+                'created_at' => '2019-11-18 00:32:20',
+                'updated_at' => '2019-11-18 00:32:20',
+            ),
+            433 => 
+            array (
+                'id' => 434,
+                'parameter_id' => 5,
+                'rule_id' => 55,
+                'created_at' => '2019-11-18 00:32:20',
+                'updated_at' => '2019-11-18 00:32:20',
+            ),
+            434 => 
+            array (
+                'id' => 435,
+                'parameter_id' => 10,
+                'rule_id' => 55,
+                'created_at' => '2019-11-18 00:32:20',
+                'updated_at' => '2019-11-18 00:32:20',
+            ),
+            435 => 
+            array (
+                'id' => 436,
+                'parameter_id' => 13,
+                'rule_id' => 55,
+                'created_at' => '2019-11-18 00:32:20',
+                'updated_at' => '2019-11-18 00:32:20',
+            ),
+            436 => 
+            array (
+                'id' => 437,
+                'parameter_id' => 17,
+                'rule_id' => 55,
+                'created_at' => '2019-11-18 00:32:20',
+                'updated_at' => '2019-11-18 00:32:20',
+            ),
+            437 => 
+            array (
+                'id' => 438,
+                'parameter_id' => 18,
+                'rule_id' => 55,
+                'created_at' => '2019-11-18 00:32:20',
+                'updated_at' => '2019-11-18 00:32:20',
+            ),
+            438 => 
+            array (
+                'id' => 439,
+                'parameter_id' => 22,
+                'rule_id' => 55,
+                'created_at' => '2019-11-18 00:32:20',
+                'updated_at' => '2019-11-18 00:32:20',
+            ),
+            439 => 
+            array (
+                'id' => 440,
+                'parameter_id' => 27,
+                'rule_id' => 55,
+                'created_at' => '2019-11-18 00:32:20',
+                'updated_at' => '2019-11-18 00:32:20',
+            ),
+            440 => 
+            array (
+                'id' => 441,
+                'parameter_id' => 3,
+                'rule_id' => 56,
+                'created_at' => '2019-11-18 00:33:15',
+                'updated_at' => '2019-11-18 00:33:15',
+            ),
+            441 => 
+            array (
+                'id' => 442,
+                'parameter_id' => 5,
+                'rule_id' => 56,
+                'created_at' => '2019-11-18 00:33:15',
+                'updated_at' => '2019-11-18 00:33:15',
+            ),
+            442 => 
+            array (
+                'id' => 443,
+                'parameter_id' => 10,
+                'rule_id' => 56,
+                'created_at' => '2019-11-18 00:33:15',
+                'updated_at' => '2019-11-18 00:33:15',
+            ),
+            443 => 
+            array (
+                'id' => 444,
+                'parameter_id' => 13,
+                'rule_id' => 56,
+                'created_at' => '2019-11-18 00:33:15',
+                'updated_at' => '2019-11-18 00:33:15',
+            ),
+            444 => 
+            array (
+                'id' => 445,
+                'parameter_id' => 17,
+                'rule_id' => 56,
+                'created_at' => '2019-11-18 00:33:15',
+                'updated_at' => '2019-11-18 00:33:15',
+            ),
+            445 => 
+            array (
+                'id' => 446,
+                'parameter_id' => 19,
+                'rule_id' => 56,
+                'created_at' => '2019-11-18 00:33:15',
+                'updated_at' => '2019-11-18 00:33:15',
+            ),
+            446 => 
+            array (
+                'id' => 447,
+                'parameter_id' => 22,
+                'rule_id' => 56,
+                'created_at' => '2019-11-18 00:33:15',
+                'updated_at' => '2019-11-18 00:33:15',
+            ),
+            447 => 
+            array (
+                'id' => 448,
+                'parameter_id' => 27,
+                'rule_id' => 56,
+                'created_at' => '2019-11-18 00:33:15',
+                'updated_at' => '2019-11-18 00:33:15',
+            ),
+            448 => 
+            array (
+                'id' => 449,
+                'parameter_id' => 3,
+                'rule_id' => 57,
+                'created_at' => '2019-11-18 00:33:46',
+                'updated_at' => '2019-11-18 00:33:46',
+            ),
+            449 => 
+            array (
+                'id' => 450,
+                'parameter_id' => 6,
+                'rule_id' => 57,
+                'created_at' => '2019-11-18 00:33:46',
+                'updated_at' => '2019-11-18 00:33:46',
+            ),
+            450 => 
+            array (
+                'id' => 451,
+                'parameter_id' => 10,
+                'rule_id' => 57,
+                'created_at' => '2019-11-18 00:33:46',
+                'updated_at' => '2019-11-18 00:33:46',
+            ),
+            451 => 
+            array (
+                'id' => 452,
+                'parameter_id' => 12,
+                'rule_id' => 57,
+                'created_at' => '2019-11-18 00:33:46',
+                'updated_at' => '2019-11-18 00:33:46',
+            ),
+            452 => 
+            array (
+                'id' => 453,
+                'parameter_id' => 14,
+                'rule_id' => 57,
+                'created_at' => '2019-11-18 00:33:46',
+                'updated_at' => '2019-11-18 00:33:46',
+            ),
+            453 => 
+            array (
+                'id' => 454,
+                'parameter_id' => 18,
+                'rule_id' => 57,
+                'created_at' => '2019-11-18 00:33:46',
+                'updated_at' => '2019-11-18 00:33:46',
+            ),
+            454 => 
+            array (
+                'id' => 455,
+                'parameter_id' => 22,
+                'rule_id' => 57,
+                'created_at' => '2019-11-18 00:33:46',
+                'updated_at' => '2019-11-18 00:33:46',
+            ),
+            455 => 
+            array (
+                'id' => 456,
+                'parameter_id' => 27,
+                'rule_id' => 57,
+                'created_at' => '2019-11-18 00:33:47',
+                'updated_at' => '2019-11-18 00:33:47',
+            ),
+            456 => 
+            array (
+                'id' => 457,
+                'parameter_id' => 3,
+                'rule_id' => 58,
+                'created_at' => '2019-11-18 00:34:25',
+                'updated_at' => '2019-11-18 00:34:25',
+            ),
+            457 => 
+            array (
+                'id' => 458,
+                'parameter_id' => 6,
+                'rule_id' => 58,
+                'created_at' => '2019-11-18 00:34:25',
+                'updated_at' => '2019-11-18 00:34:25',
+            ),
+            458 => 
+            array (
+                'id' => 459,
+                'parameter_id' => 10,
+                'rule_id' => 58,
+                'created_at' => '2019-11-18 00:34:25',
+                'updated_at' => '2019-11-18 00:34:25',
+            ),
+            459 => 
+            array (
+                'id' => 460,
+                'parameter_id' => 12,
+                'rule_id' => 58,
+                'created_at' => '2019-11-18 00:34:25',
+                'updated_at' => '2019-11-18 00:34:25',
+            ),
+            460 => 
+            array (
+                'id' => 461,
+                'parameter_id' => 14,
+                'rule_id' => 58,
+                'created_at' => '2019-11-18 00:34:25',
+                'updated_at' => '2019-11-18 00:34:25',
+            ),
+            461 => 
+            array (
+                'id' => 462,
+                'parameter_id' => 19,
+                'rule_id' => 58,
+                'created_at' => '2019-11-18 00:34:25',
+                'updated_at' => '2019-11-18 00:34:25',
+            ),
+            462 => 
+            array (
+                'id' => 463,
+                'parameter_id' => 22,
+                'rule_id' => 58,
+                'created_at' => '2019-11-18 00:34:25',
+                'updated_at' => '2019-11-18 00:34:25',
+            ),
+            463 => 
+            array (
+                'id' => 464,
+                'parameter_id' => 27,
+                'rule_id' => 58,
+                'created_at' => '2019-11-18 00:34:25',
+                'updated_at' => '2019-11-18 00:34:25',
+            ),
+            464 => 
+            array (
+                'id' => 465,
+                'parameter_id' => 3,
+                'rule_id' => 59,
+                'created_at' => '2019-11-18 00:35:01',
+                'updated_at' => '2019-11-18 00:35:01',
+            ),
+            465 => 
+            array (
+                'id' => 466,
+                'parameter_id' => 6,
+                'rule_id' => 59,
+                'created_at' => '2019-11-18 00:35:01',
+                'updated_at' => '2019-11-18 00:35:01',
+            ),
+            466 => 
+            array (
+                'id' => 467,
+                'parameter_id' => 10,
+                'rule_id' => 59,
+                'created_at' => '2019-11-18 00:35:01',
+                'updated_at' => '2019-11-18 00:35:01',
+            ),
+            467 => 
+            array (
+                'id' => 468,
+                'parameter_id' => 12,
+                'rule_id' => 59,
+                'created_at' => '2019-11-18 00:35:01',
+                'updated_at' => '2019-11-18 00:35:01',
+            ),
+            468 => 
+            array (
+                'id' => 469,
+                'parameter_id' => 17,
+                'rule_id' => 59,
+                'created_at' => '2019-11-18 00:35:01',
+                'updated_at' => '2019-11-18 00:35:01',
+            ),
+            469 => 
+            array (
+                'id' => 470,
+                'parameter_id' => 18,
+                'rule_id' => 59,
+                'created_at' => '2019-11-18 00:35:01',
+                'updated_at' => '2019-11-18 00:35:01',
+            ),
+            470 => 
+            array (
+                'id' => 471,
+                'parameter_id' => 22,
+                'rule_id' => 59,
+                'created_at' => '2019-11-18 00:35:01',
+                'updated_at' => '2019-11-18 00:35:01',
+            ),
+            471 => 
+            array (
+                'id' => 472,
+                'parameter_id' => 27,
+                'rule_id' => 59,
+                'created_at' => '2019-11-18 00:35:01',
+                'updated_at' => '2019-11-18 00:35:01',
+            ),
+            472 => 
+            array (
+                'id' => 473,
+                'parameter_id' => 3,
+                'rule_id' => 60,
+                'created_at' => '2019-11-18 00:35:31',
+                'updated_at' => '2019-11-18 00:35:31',
+            ),
+            473 => 
+            array (
+                'id' => 474,
+                'parameter_id' => 6,
+                'rule_id' => 60,
+                'created_at' => '2019-11-18 00:35:31',
+                'updated_at' => '2019-11-18 00:35:31',
+            ),
+            474 => 
+            array (
+                'id' => 475,
+                'parameter_id' => 10,
+                'rule_id' => 60,
+                'created_at' => '2019-11-18 00:35:31',
+                'updated_at' => '2019-11-18 00:35:31',
+            ),
+            475 => 
+            array (
+                'id' => 476,
+                'parameter_id' => 12,
+                'rule_id' => 60,
+                'created_at' => '2019-11-18 00:35:31',
+                'updated_at' => '2019-11-18 00:35:31',
+            ),
+            476 => 
+            array (
+                'id' => 477,
+                'parameter_id' => 17,
+                'rule_id' => 60,
+                'created_at' => '2019-11-18 00:35:31',
+                'updated_at' => '2019-11-18 00:35:31',
+            ),
+            477 => 
+            array (
+                'id' => 478,
+                'parameter_id' => 19,
+                'rule_id' => 60,
+                'created_at' => '2019-11-18 00:35:31',
+                'updated_at' => '2019-11-18 00:35:31',
+            ),
+            478 => 
+            array (
+                'id' => 479,
+                'parameter_id' => 22,
+                'rule_id' => 60,
+                'created_at' => '2019-11-18 00:35:31',
+                'updated_at' => '2019-11-18 00:35:31',
+            ),
+            479 => 
+            array (
+                'id' => 480,
+                'parameter_id' => 27,
+                'rule_id' => 60,
+                'created_at' => '2019-11-18 00:35:31',
+                'updated_at' => '2019-11-18 00:35:31',
+            ),
+            480 => 
+            array (
+                'id' => 481,
+                'parameter_id' => 3,
+                'rule_id' => 61,
+                'created_at' => '2019-11-18 00:36:06',
+                'updated_at' => '2019-11-18 00:36:06',
+            ),
+            481 => 
+            array (
+                'id' => 482,
+                'parameter_id' => 6,
+                'rule_id' => 61,
+                'created_at' => '2019-11-18 00:36:06',
+                'updated_at' => '2019-11-18 00:36:06',
+            ),
+            482 => 
+            array (
+                'id' => 483,
+                'parameter_id' => 10,
+                'rule_id' => 61,
+                'created_at' => '2019-11-18 00:36:06',
+                'updated_at' => '2019-11-18 00:36:06',
+            ),
+            483 => 
+            array (
+                'id' => 484,
+                'parameter_id' => 13,
+                'rule_id' => 61,
+                'created_at' => '2019-11-18 00:36:06',
+                'updated_at' => '2019-11-18 00:36:06',
+            ),
+            484 => 
+            array (
+                'id' => 485,
+                'parameter_id' => 14,
+                'rule_id' => 61,
+                'created_at' => '2019-11-18 00:36:06',
+                'updated_at' => '2019-11-18 00:36:06',
+            ),
+            485 => 
+            array (
+                'id' => 486,
+                'parameter_id' => 18,
+                'rule_id' => 61,
+                'created_at' => '2019-11-18 00:36:06',
+                'updated_at' => '2019-11-18 00:36:06',
+            ),
+            486 => 
+            array (
+                'id' => 487,
+                'parameter_id' => 22,
+                'rule_id' => 61,
+                'created_at' => '2019-11-18 00:36:06',
+                'updated_at' => '2019-11-18 00:36:06',
+            ),
+            487 => 
+            array (
+                'id' => 488,
+                'parameter_id' => 27,
+                'rule_id' => 61,
+                'created_at' => '2019-11-18 00:36:06',
+                'updated_at' => '2019-11-18 00:36:06',
+            ),
+            488 => 
+            array (
+                'id' => 489,
+                'parameter_id' => 3,
+                'rule_id' => 62,
+                'created_at' => '2019-11-18 00:36:46',
+                'updated_at' => '2019-11-18 00:36:46',
+            ),
+            489 => 
+            array (
+                'id' => 490,
+                'parameter_id' => 6,
+                'rule_id' => 62,
+                'created_at' => '2019-11-18 00:36:46',
+                'updated_at' => '2019-11-18 00:36:46',
+            ),
+            490 => 
+            array (
+                'id' => 491,
+                'parameter_id' => 10,
+                'rule_id' => 62,
+                'created_at' => '2019-11-18 00:36:46',
+                'updated_at' => '2019-11-18 00:36:46',
+            ),
+            491 => 
+            array (
+                'id' => 492,
+                'parameter_id' => 13,
+                'rule_id' => 62,
+                'created_at' => '2019-11-18 00:36:46',
+                'updated_at' => '2019-11-18 00:36:46',
+            ),
+            492 => 
+            array (
+                'id' => 493,
+                'parameter_id' => 14,
+                'rule_id' => 62,
+                'created_at' => '2019-11-18 00:36:46',
+                'updated_at' => '2019-11-18 00:36:46',
+            ),
+            493 => 
+            array (
+                'id' => 494,
+                'parameter_id' => 19,
+                'rule_id' => 62,
+                'created_at' => '2019-11-18 00:36:46',
+                'updated_at' => '2019-11-18 00:36:46',
+            ),
+            494 => 
+            array (
+                'id' => 495,
+                'parameter_id' => 22,
+                'rule_id' => 62,
+                'created_at' => '2019-11-18 00:36:46',
+                'updated_at' => '2019-11-18 00:36:46',
+            ),
+            495 => 
+            array (
+                'id' => 496,
+                'parameter_id' => 27,
+                'rule_id' => 62,
+                'created_at' => '2019-11-18 00:36:46',
+                'updated_at' => '2019-11-18 00:36:46',
+            ),
+            496 => 
+            array (
+                'id' => 497,
+                'parameter_id' => 3,
+                'rule_id' => 63,
+                'created_at' => '2019-11-18 00:37:34',
+                'updated_at' => '2019-11-18 00:37:34',
+            ),
+            497 => 
+            array (
+                'id' => 498,
+                'parameter_id' => 6,
+                'rule_id' => 63,
+                'created_at' => '2019-11-18 00:37:34',
+                'updated_at' => '2019-11-18 00:37:34',
+            ),
+            498 => 
+            array (
+                'id' => 499,
+                'parameter_id' => 10,
+                'rule_id' => 63,
+                'created_at' => '2019-11-18 00:37:34',
+                'updated_at' => '2019-11-18 00:37:34',
+            ),
+            499 => 
+            array (
+                'id' => 500,
+                'parameter_id' => 13,
+                'rule_id' => 63,
+                'created_at' => '2019-11-18 00:37:34',
+                'updated_at' => '2019-11-18 00:37:34',
+            ),
+        ));
+        \DB::table('parameter_rule')->insert(array (
+            0 => 
+            array (
+                'id' => 501,
+                'parameter_id' => 17,
+                'rule_id' => 63,
+                'created_at' => '2019-11-18 00:37:34',
+                'updated_at' => '2019-11-18 00:37:34',
+            ),
+            1 => 
+            array (
+                'id' => 502,
+                'parameter_id' => 18,
+                'rule_id' => 63,
+                'created_at' => '2019-11-18 00:37:34',
+                'updated_at' => '2019-11-18 00:37:34',
+            ),
+            2 => 
+            array (
+                'id' => 503,
+                'parameter_id' => 22,
+                'rule_id' => 63,
+                'created_at' => '2019-11-18 00:37:34',
+                'updated_at' => '2019-11-18 00:37:34',
+            ),
+            3 => 
+            array (
+                'id' => 504,
+                'parameter_id' => 27,
+                'rule_id' => 63,
+                'created_at' => '2019-11-18 00:37:34',
+                'updated_at' => '2019-11-18 00:37:34',
+            ),
+            4 => 
+            array (
+                'id' => 505,
+                'parameter_id' => 3,
+                'rule_id' => 64,
+                'created_at' => '2019-11-18 00:38:15',
+                'updated_at' => '2019-11-18 00:38:15',
+            ),
+            5 => 
+            array (
+                'id' => 506,
+                'parameter_id' => 6,
+                'rule_id' => 64,
+                'created_at' => '2019-11-18 00:38:15',
+                'updated_at' => '2019-11-18 00:38:15',
+            ),
+            6 => 
+            array (
+                'id' => 507,
+                'parameter_id' => 10,
+                'rule_id' => 64,
+                'created_at' => '2019-11-18 00:38:15',
+                'updated_at' => '2019-11-18 00:38:15',
+            ),
+            7 => 
+            array (
+                'id' => 508,
+                'parameter_id' => 13,
+                'rule_id' => 64,
+                'created_at' => '2019-11-18 00:38:15',
+                'updated_at' => '2019-11-18 00:38:15',
+            ),
+            8 => 
+            array (
+                'id' => 509,
+                'parameter_id' => 17,
+                'rule_id' => 64,
+                'created_at' => '2019-11-18 00:38:15',
+                'updated_at' => '2019-11-18 00:38:15',
+            ),
+            9 => 
+            array (
+                'id' => 510,
+                'parameter_id' => 19,
+                'rule_id' => 64,
+                'created_at' => '2019-11-18 00:38:15',
+                'updated_at' => '2019-11-18 00:38:15',
+            ),
+            10 => 
+            array (
+                'id' => 511,
+                'parameter_id' => 22,
+                'rule_id' => 64,
+                'created_at' => '2019-11-18 00:38:15',
+                'updated_at' => '2019-11-18 00:38:15',
+            ),
+            11 => 
+            array (
+                'id' => 512,
+                'parameter_id' => 27,
+                'rule_id' => 64,
+                'created_at' => '2019-11-18 00:38:15',
+                'updated_at' => '2019-11-18 00:38:15',
+            ),
+            12 => 
+            array (
+                'id' => 513,
+                'parameter_id' => 3,
+                'rule_id' => 65,
+                'created_at' => '2019-11-18 00:38:47',
+                'updated_at' => '2019-11-18 00:38:47',
+            ),
+            13 => 
+            array (
+                'id' => 514,
+                'parameter_id' => 5,
+                'rule_id' => 65,
+                'created_at' => '2019-11-18 00:38:47',
+                'updated_at' => '2019-11-18 00:38:47',
+            ),
+            14 => 
+            array (
+                'id' => 515,
+                'parameter_id' => 9,
+                'rule_id' => 65,
+                'created_at' => '2019-11-18 00:38:47',
+                'updated_at' => '2019-11-18 00:38:47',
+            ),
+            15 => 
+            array (
+                'id' => 516,
+                'parameter_id' => 12,
+                'rule_id' => 65,
+                'created_at' => '2019-11-18 00:38:47',
+                'updated_at' => '2019-11-18 00:38:47',
+            ),
+            16 => 
+            array (
+                'id' => 517,
+                'parameter_id' => 17,
+                'rule_id' => 65,
+                'created_at' => '2019-11-18 00:38:47',
+                'updated_at' => '2019-11-18 00:38:47',
+            ),
+            17 => 
+            array (
+                'id' => 518,
+                'parameter_id' => 21,
+                'rule_id' => 65,
+                'created_at' => '2019-11-18 00:38:47',
+                'updated_at' => '2019-11-18 00:38:47',
+            ),
+            18 => 
+            array (
+                'id' => 519,
+                'parameter_id' => 23,
+                'rule_id' => 65,
+                'created_at' => '2019-11-18 00:38:47',
+                'updated_at' => '2019-11-18 00:38:47',
+            ),
+            19 => 
+            array (
+                'id' => 520,
+                'parameter_id' => 27,
+                'rule_id' => 65,
+                'created_at' => '2019-11-18 00:38:47',
+                'updated_at' => '2019-11-18 00:38:47',
+            ),
+            20 => 
+            array (
+                'id' => 521,
+                'parameter_id' => 3,
+                'rule_id' => 66,
+                'created_at' => '2019-11-18 00:39:17',
+                'updated_at' => '2019-11-18 00:39:17',
+            ),
+            21 => 
+            array (
+                'id' => 522,
+                'parameter_id' => 6,
+                'rule_id' => 66,
+                'created_at' => '2019-11-18 00:39:17',
+                'updated_at' => '2019-11-18 00:39:17',
+            ),
+            22 => 
+            array (
+                'id' => 523,
+                'parameter_id' => 9,
+                'rule_id' => 66,
+                'created_at' => '2019-11-18 00:39:17',
+                'updated_at' => '2019-11-18 00:39:17',
+            ),
+            23 => 
+            array (
+                'id' => 524,
+                'parameter_id' => 12,
+                'rule_id' => 66,
+                'created_at' => '2019-11-18 00:39:18',
+                'updated_at' => '2019-11-18 00:39:18',
+            ),
+            24 => 
+            array (
+                'id' => 525,
+                'parameter_id' => 17,
+                'rule_id' => 66,
+                'created_at' => '2019-11-18 00:39:18',
+                'updated_at' => '2019-11-18 00:39:18',
+            ),
+            25 => 
+            array (
+                'id' => 526,
+                'parameter_id' => 21,
+                'rule_id' => 66,
+                'created_at' => '2019-11-18 00:39:18',
+                'updated_at' => '2019-11-18 00:39:18',
+            ),
+            26 => 
+            array (
+                'id' => 527,
+                'parameter_id' => 23,
+                'rule_id' => 66,
+                'created_at' => '2019-11-18 00:39:18',
+                'updated_at' => '2019-11-18 00:39:18',
+            ),
+            27 => 
+            array (
+                'id' => 528,
+                'parameter_id' => 27,
+                'rule_id' => 66,
+                'created_at' => '2019-11-18 00:39:18',
+                'updated_at' => '2019-11-18 00:39:18',
+            ),
+            28 => 
+            array (
+                'id' => 529,
+                'parameter_id' => 3,
+                'rule_id' => 67,
+                'created_at' => '2019-11-18 00:40:10',
+                'updated_at' => '2019-11-18 00:40:10',
+            ),
+            29 => 
+            array (
+                'id' => 530,
+                'parameter_id' => 5,
+                'rule_id' => 67,
+                'created_at' => '2019-11-18 00:40:10',
+                'updated_at' => '2019-11-18 00:40:10',
+            ),
+            30 => 
+            array (
+                'id' => 531,
+                'parameter_id' => 8,
+                'rule_id' => 67,
+                'created_at' => '2019-11-18 00:40:10',
+                'updated_at' => '2019-11-18 00:40:10',
+            ),
+            31 => 
+            array (
+                'id' => 532,
+                'parameter_id' => 12,
+                'rule_id' => 67,
+                'created_at' => '2019-11-18 00:40:10',
+                'updated_at' => '2019-11-18 00:40:10',
+            ),
+            32 => 
+            array (
+                'id' => 533,
+                'parameter_id' => 15,
+                'rule_id' => 67,
+                'created_at' => '2019-11-18 00:40:10',
+                'updated_at' => '2019-11-18 00:40:10',
+            ),
+            33 => 
+            array (
+                'id' => 534,
+                'parameter_id' => 21,
+                'rule_id' => 67,
+                'created_at' => '2019-11-18 00:40:10',
+                'updated_at' => '2019-11-18 00:40:10',
+            ),
+            34 => 
+            array (
+                'id' => 535,
+                'parameter_id' => 25,
+                'rule_id' => 67,
+                'created_at' => '2019-11-18 00:40:10',
+                'updated_at' => '2019-11-18 00:40:10',
+            ),
+            35 => 
+            array (
+                'id' => 536,
+                'parameter_id' => 28,
+                'rule_id' => 67,
+                'created_at' => '2019-11-18 00:40:10',
+                'updated_at' => '2019-11-18 00:40:10',
+            ),
+            36 => 
+            array (
+                'id' => 537,
+                'parameter_id' => 3,
+                'rule_id' => 68,
+                'created_at' => '2019-11-18 00:40:43',
+                'updated_at' => '2019-11-18 00:40:43',
+            ),
+            37 => 
+            array (
+                'id' => 538,
+                'parameter_id' => 6,
+                'rule_id' => 68,
+                'created_at' => '2019-11-18 00:40:43',
+                'updated_at' => '2019-11-18 00:40:43',
+            ),
+            38 => 
+            array (
+                'id' => 539,
+                'parameter_id' => 8,
+                'rule_id' => 68,
+                'created_at' => '2019-11-18 00:40:43',
+                'updated_at' => '2019-11-18 00:40:43',
+            ),
+            39 => 
+            array (
+                'id' => 540,
+                'parameter_id' => 12,
+                'rule_id' => 68,
+                'created_at' => '2019-11-18 00:40:43',
+                'updated_at' => '2019-11-18 00:40:43',
+            ),
+            40 => 
+            array (
+                'id' => 541,
+                'parameter_id' => 15,
+                'rule_id' => 68,
+                'created_at' => '2019-11-18 00:40:43',
+                'updated_at' => '2019-11-18 00:40:43',
+            ),
+            41 => 
+            array (
+                'id' => 542,
+                'parameter_id' => 21,
+                'rule_id' => 68,
+                'created_at' => '2019-11-18 00:40:43',
+                'updated_at' => '2019-11-18 00:40:43',
+            ),
+            42 => 
+            array (
+                'id' => 543,
+                'parameter_id' => 25,
+                'rule_id' => 68,
+                'created_at' => '2019-11-18 00:40:43',
+                'updated_at' => '2019-11-18 00:40:43',
+            ),
+            43 => 
+            array (
+                'id' => 544,
+                'parameter_id' => 28,
+                'rule_id' => 68,
+                'created_at' => '2019-11-18 00:40:43',
+                'updated_at' => '2019-11-18 00:40:43',
+            ),
         ));
         
         
