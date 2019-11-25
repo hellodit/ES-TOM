@@ -51,7 +51,6 @@ class ConsultationController extends Controller
     public function proses(Request $request){
         $request->validate([
             'childName' => 'required|string',
-            'birthday' => 'required',
             'gender' => 'required',
             'age' => 'required',
             'edu' => 'required',
@@ -91,7 +90,6 @@ class ConsultationController extends Controller
             $history = New History;
             $history->childname = $request->get('childName');
             $history->gender = $request->get('gender');
-            $history->birthday = $request->get('birthday');
             $history->user_id = Auth::user()->id;
             $history->rule_id = $selectedRule['0']['id'];
             $history->status = 'success';
@@ -101,7 +99,6 @@ class ConsultationController extends Controller
             $history = New History;
             $history->childname = $request->get('childName');
             $history->gender = $request->get('gender');
-            $history->birthday = $request->get('birthday');
             $history->user_id = Auth::user()->id;
             $history->rule_id = null;
             $history->status = 'failed';
