@@ -33,11 +33,21 @@ class UserSeeder extends Seeder
 
         User::create([
             'name'       => 'Asdita Prasetya',
-            'username'   => 'hellodit',
+            'username'   => 'admin',
             'email'      => 'asditap@gmail.com',
-            'password'   =>  bcrypt('hellodit'),
+            'password'   =>  bcrypt('admin'),
             'avatar'     => $image60,
             'type'       => 'admin'
+        ]);
+
+
+        User::create([
+            'name'       => 'Virman Pradana',
+            'username'   => 'orangtua',
+            'email'      => 'orangtua@gmail.com',
+            'password'   =>  bcrypt('orangtua'),
+            'avatar'     => $image60,
+            'type'       => 'orangtua'
         ]);
     }
 }
