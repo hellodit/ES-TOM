@@ -34,6 +34,7 @@ Route::group(['prefix' => 'dashboard','middleware' => 'auth','namespace' => 'Das
     Route::post('parameter','ParametersController@store');
     Route::get('parameter/form/{id?}','ParametersController@form');
     Route::get('parameters/data','ParametersController@data');
+    Route::post('parameter/edit/{id}','ParametersController@edit');
     Route::get('parameter/detail/{id}','ParametersController@show');
     Route::delete('parameter/{id}','ParametersController@destroy');
     Route::get('getparam','ParametersController@getParameters');

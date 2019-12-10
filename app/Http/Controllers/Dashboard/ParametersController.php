@@ -19,8 +19,8 @@ class ParametersController extends Controller
 
     public function form($id = null){
         $data['act'] = (empty($id) ? "Tambah Parameter" : "Sunting Parameter");
-        $data['url'] = (empty($id) ? url('dashboard/parameter') : url('dashborad/parameter/'.$id));
-        $data['action'] = (empty($id) ? "POST" : "PUT");
+        $data['url'] = (empty($id) ? url('dashboard/parameter') : url('dashboard/parameter/edit/'.$id));
+        $data['action'] = (empty($id) ? "POST" : "POST");
         $data['parameter'] = Parameter::find($id);
         $data['variables'] = Variable::all();
         return view('dashboard.master-parameters.form',['data' => $data]);
@@ -31,6 +31,48 @@ class ParametersController extends Controller
             $parameters = Parameter::latest()->with('variable')->paginate(10);
             return view('dashboard.master-parameters.data',compact('parameters'))->render();
         }
+    }
+
+    public function edit(Request $request){
+        $rules = [
+            'code'           => 'required|string|max:50|unique:parameters,code',
+            'name'           => 'required|string',
+            'variable'       => 'required'
+        ];
+
+        $customMessages = [
+            'required' => 'Kolom :attribute harus diisi.',
+            'max' => ':attribute terlalu panjang.',
+            'unique'    => ':attribute telah digunakan sebelumnya'
+        ];
+
+        $customAttributes = [
+            'code'  => 'kode parameter',
+            'name ' => 'nama parameter',
+            'variable'  => 'Ketegori parameter'
+        ];
+
+        $validator = Validator::make($request->all(), $rules, $customMessages);
+        $validator->setAttributeNames($customAttributes);
+
+        if($validator->fails()) {
+            return response()->json(array(
+                'success' => false,
+                'errors' => $validator->getMessageBag()->toArray()
+            ), 400);
+        }
+
+        Parameter::find($request->id)->update([
+            'code'          => $request->code,
+            'name'          => $request->name,
+            'variable_id'      => $request->variable,
+        ]);
+
+        return response()->json(array(
+            'success' => 'Data Parameter telah berhasil ditambahkan',
+            'errors' => false,
+        ), 200);
+
     }
 
     public function store(Request $request){
